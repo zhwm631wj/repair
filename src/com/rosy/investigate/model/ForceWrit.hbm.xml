@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.investigate.model.ForceWrit"
+            table="forcewrit"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof--><generator class="uuid.hex">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="depNum"
+                    column="depNum"
+                length="12"
+        >
+
+        </property>
+
+        <property
+            name="adminOrder"
+                    column="adminOrder"
+                length="2"
+        >
+
+        </property>
+
+        <property
+            name="keyWord"
+                    column="keyWord"
+                length="4"
+        >
+
+        </property>
+
+        <property
+            name="serialNum"
+                    column="serialNum"
+                length="4"
+        >
+
+        </property>
+
+        <property
+            name="spokesManOfParty"
+                    column="spokesManOfParty"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="decisionContent"
+                    column="decisionContent"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="deciReasion"
+                    column="deciReasion"
+                length="2"
+        >
+
+        </property>
+
+        <property
+            name="preRevivorOrg"
+                    column="preRevivorOrg"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="sendOrderOrg"
+                    column="sendOrderOrg"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="orderDate"
+                    column="orderDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="propertyList"
+                    column="propertyList"
+                length="255"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="affixKeeper"
+                    column="affixKeeper"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="affixUndertakeMan"
+                    column="affixUndertakeMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="affixEyewitness"
+                    column="affixEyewitness"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="eyewitnessDate"
+                    column="eyewitnessDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="affixDate"
+                    column="affixDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

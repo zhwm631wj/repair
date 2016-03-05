@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.model.SysLog"
+            table="syslog"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag instead -->
+   <generator class="uuid.hex"/>
+
+    </id>
+
+        <property
+            name="caseId"
+                    column="caseID"
+                length="48"
+                not-null="true"
+        >
+
+        </property>
+
+        <property
+            name="endTime"
+                    column="endTime"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="startTime"
+                    column="startTime"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="timePoint"
+                    column="timePoint"
+                length="19"
+                not-null="true"
+        >
+
+        </property>
+
+        <property
+            name="userId"
+                    column="userID"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="username"
+                    column="username"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="orgNum"
+                    column="orgNum"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="orgName"
+                    column="orgName"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="description"
+                    column="description"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

@@ -1,0 +1,58 @@
+<decorators defaultdir="/decorators">
+    <excludes>
+        <pattern>/resources/*</pattern>
+        <pattern>*process.html</pattern>
+    </excludes> 
+    <decorator name="default" page="default.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="main" page="main.jsp">
+    <pattern>/iframe/*</pattern>
+    <pattern>/uploadfile/*</pattern>
+    <pattern>/servlet/*</pattern>
+    <pattern>*login.jsp*</pattern>
+    </decorator>
+     <decorator name="empty" page="empty.jsp">
+	 <pattern>/attachments.html</pattern>
+	 <pattern>*process.html</pattern>
+	 <pattern>/*PartySpokesman*</pattern>
+     <pattern>/*PartyInfo*</pattern>
+     <pattern>/*BusinessLicense*</pattern>
+	</decorator>
+	 <decorator name="flow" page="flow.jsp">
+       <pattern>/*DiscussCaseRec*</pattern>
+       <pattern>/*InspectMarket*</pattern>
+       <pattern>/*SceneCheck*</pattern>
+       <pattern>/*RegisterApproval*</pattern>
+       <pattern>/*CaseReport*</pattern>
+       <pattern>/*TransferCase*</pattern>
+       <pattern>/*HandoverCase*</pattern>
+    </decorator>
+       <decorator name="coerce" page="coercive.jsp">
+
+       <pattern>/*CoercePropertyList*</pattern>
+       <pattern>/*ForceWrit*</pattern>
+       <pattern>/*Coerce*</pattern>
+       <pattern>/*PropertyKeepList*</pattern>
+       <pattern>/*CoerceTransmitReturnReceipt*</pattern>
+    </decorator>
+       <decorator name="rescind" page="rescind.jsp">
+
+       <pattern>/*RescindPropertyList*</pattern>
+       <pattern>/*ReleaseForceWrit*</pattern>
+       <pattern>/*Rescind*</pattern>
+       <pattern>/*PropertyOutList*</pattern>
+        <pattern>/*RescindTransmitReturnReceipt*</pattern>
+    </decorator>
+    <decorator name="investigate" page="investigate.jsp">
+
+	  <pattern>/*PartyTabs*</pattern>
+
+  	   <pattern>/*CheckupProxy*</pattern>
+  	   <pattern>/*CheckProxyItem*</pattern>
+   	   <pattern>/*CheckItem*</pattern>
+   	   <pattern>/*CheckupReport*</pattern>
+   	   <pattern>/*CheckupTransmitReturnReceipt*</pattern>  
+   	   <pattern>*1.jsp*</pattern>	   
+    </decorator>
+</decorators>

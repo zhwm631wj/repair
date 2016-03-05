@@ -1,0 +1,19 @@
+
+
+*{   margin:0;   padding:0;}  
+
+  .shield{  
+   width:100%; height:100%;    
+   background:  blank;
+   position:absolute;   
+   left:0;   right:0;   top:0;   bottom:0;   
+   -moz-opacity:0.4;   
+   filter:alpha(opacity=40);z-index:99;   
+     } 
+  .file-info{ width:374px; height:150px; background: #EEEEEE;position:absolute;   left:300;   right:0;   top:250;   bottom:0;    -moz-opacity:0.9;    filter:alpha(opacity=90);z-index:99999;   
+    }  
+  .file-info .info-head{ width:100%; background-color:#526EA6; }
+  .file-info .info-head .head-name{ padding:4px 0 3px; color:#fff; font-weight:bold; margin-left:5px; }
+  .file-info .info-head .head-btn{float:right; margin-right:2px; margin-top:2px; width:32px; }
+  .file-info .info-head .head-btn .close{background:transparent url(../images/close_window.gif) no-repeat scroll 0 0;display:block;float:right;height:15px;width:15px;cursor: pointer;}
+  

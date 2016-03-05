@@ -1,0 +1,11 @@
+#Mon Nov 10 23:20:05 CST 2008
+eclipse.preferences.version=1
+encoding//WebRoot/scripts/filelist.js=UTF-8
+encoding//WebRoot/scripts/fileupload.js=UTF-8
+encoding//WebRoot/scripts/flowglobal.js=UTF-8
+encoding//WebRoot/scripts/global.js=UTF-8
+encoding//WebRoot/scripts/plugin/additional.js=utf-8
+encoding//WebRoot/scripts/register/registerApproval.js=UTF-8
+encoding//src/ApplicationResources_zh_CN.properties=ISO-8859-1
+encoding//src/com/rosy=UTF-8
+encoding//src/com/rosy/util/ConstHelper.java=UTF-8

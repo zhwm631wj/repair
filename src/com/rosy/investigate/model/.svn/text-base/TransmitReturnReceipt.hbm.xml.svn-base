@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.investigate.model.TransmitReturnReceipt"
+            table="transmitreturnreceipt"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof--><generator class="uuid.hex">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="eventId"
+                    column="eventID"
+                length="48"
+                not-null="true"
+        >
+
+        </property>
+
+        <property
+            name="depNum"
+                    column="depNum"
+                length="12"
+        >
+
+        </property>
+
+        <property
+            name="adminOrder"
+                    column="adminOrder"
+                length="2"
+        >
+
+        </property>
+
+        <property
+            name="keyWord"
+                    column="keyWord"
+                length="4"
+        >
+
+        </property>
+
+        <property
+            name="serialNum"
+                    column="serialNum"
+                length="4"
+        >
+
+        </property>
+
+        <property
+            name="writName"
+                    column="writName"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="wirtNo"
+                    column="wirtNO"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="inceptMan"
+                    column="inceptMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="transDate"
+                    column="transDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="transWhere"
+                    column="transWhere"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="transWay"
+                    column="transWay"
+                length="2"
+        >
+
+        </property>
+
+        <property
+            name="inceptManVisa"
+                    column="inceptManVisa"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="transMan"
+                    column="transMan"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="eyewitness"
+                    column="eyewitness"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="eyewitnessDate"
+                    column="eyewitnessDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter
+END
+GZIPResponseWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter/GZIPResponseWrapper.java
+END
+GZIPFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter/GZIPFilter.java
+END
+LocaleRequestWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter/LocaleRequestWrapper.java
+END
+GZIPResponseStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter/GZIPResponseStream.java
+END
+LocaleFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/filter/LocaleFilter.java
+END

@@ -1,0 +1,40 @@
+8
+
+dir
+38
+https://apca.googlecode.com/svn/trunk/apca/src/com/rosy/punish
+https://apca.googlecode.com/svn
+
+
+
+2008-11-03T06:36:32.471163Z
+38
+zhwm631wj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+295a6d74-9d32-11dd-9476-71c886a649bc
+
+dao
+dir
+
+model
+dir
+
+service
+dir
+
+webapp
+dir
+

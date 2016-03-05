@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate
+END
+CaseCatalogDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/CaseCatalogDaoHibernate.java
+END
+DerateOrPutOffDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/dao/hibernate/DerateOrPutOffDaoHibernate.java
+END
+VerifyCheckupDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/VerifyCheckupDaoHibernate.java
+END
+HandoverCaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/dao/hibernate/HandoverCaseDaoHibernate.java
+END
+AdminApprizeDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/AdminApprizeDaoHibernate.java
+END
+DiscussCaseRecDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/DiscussCaseRecDaoHibernate.java
+END
+PunishDecisionBookDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/PunishDecisionBookDaoHibernate.java
+END
+PunishDraftDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/PunishDraftDaoHibernate.java
+END
+TransferCaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/dao/hibernate/TransferCaseDaoHibernate.java
+END
+AmerceReceiptDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/AmerceReceiptDaoHibernate.java
+END
+HearOfWitnesseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/HearOfWitnesseDaoHibernate.java
+END
+PerformCaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/PerformCaseDaoHibernate.java
+END
+PunishExamineDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/PunishExamineDaoHibernate.java
+END
+AffixToPunishDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/AffixToPunishDaoHibernate.java
+END
+CaseInvestEndReportDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/dao/hibernate/CaseInvestEndReportDaoHibernate.java
+END

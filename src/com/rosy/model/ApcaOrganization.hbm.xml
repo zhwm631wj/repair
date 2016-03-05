@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.rosy.model.ApcaOrganization" table="apca_organization">
+  <id column="ID" length="48" name="id" type="java.lang.String">
+   <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag instead -->
+   <generator class="uuid.hex"/>
+  </id>
+  <property column="org_Code" generated="never" lazy="false" length="50"
+   name="orgCode" type="string"/>
+  <property column="org_Name" generated="never" lazy="false" length="45"
+   name="orgName" type="string"/>
+  <property column="org_Satrap" generated="never" lazy="false"
+   length="10" name="orgSatrap" type="string"/>
+  <property column="org_Property" generated="never" lazy="false"
+   length="30" name="orgProperty" type="string"/>
+  <property column="org_rank" generated="never" lazy="false" length="2"
+   name="orgRank" type="string"/>
+  <property column="remark" generated="never" lazy="false" length="200"
+   name="remark" type="string"/>
+  <property column="rFlag" generated="never" lazy="false" length="1"
+   name="rflag" type="string" update="false"/>
+  <property column="createDate" generated="never" lazy="false"
+   length="19" name="createDate" type="timestamp" update="false" />
+     <many-to-one name="organization" class="com.rosy.model.ApcaOrganization" fetch="select" not-found="ignore"  lazy="false">
+            <column name="higher_org" />
+        </many-to-one>
+        <set name="organizations" cascade="save-update" lazy="true"  inverse="true">
+            <key>
+                <column name="higher_org" />
+            </key>
+            <one-to-many class="com.rosy.model.ApcaOrganization" />
+        </set>
+ </class>
+</hibernate-mapping>

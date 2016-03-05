@@ -1,0 +1,75 @@
+8
+
+dir
+9
+https://apca.googlecode.com/svn/trunk/apca
+https://apca.googlecode.com/svn
+
+
+
+2008-10-20T04:19:07.791985Z
+9
+zhwm631wj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+295a6d74-9d32-11dd-9476-71c886a649bc
+
+.classpath
+file
+59
+
+
+
+2008-11-10T15:23:42.880000Z
+fdf162e6ddd5b62d6044880ec808200f
+2008-11-16T09:56:22.079774Z
+59
+zhwm631wj
+has-props
+
+.mymetadata
+file
+19
+
+
+
+2008-10-19T14:46:22.467000Z
+a328dab1c88c913d5ff5c176bd9425fc
+2008-10-20T05:19:25.676263Z
+19
+zhwm631wj
+
+.project
+file
+19
+
+
+
+2008-10-19T15:56:44.793000Z
+1916a8dd3f924c33e01cbf8d53beee1c
+2008-10-20T05:19:25.676263Z
+19
+zhwm631wj
+has-props
+
+.settings
+dir
+
+WebRoot
+dir
+
+src
+dir
+

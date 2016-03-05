@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.punish.model.HandoverCase"
+            table="handovercase"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag instead -->
+    <generator class="uuid">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="eventId"
+                    column="eventID"
+                length="48"
+        >
+
+        </property>
+
+        <property
+            name="handoverDate"
+                    column="handoverDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="handoverOrg"
+                    column="handoverOrg"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="content"
+                    column="content"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="dataCatalog"
+                    column="dataCatalog"
+                length="2000"
+        >
+
+        </property>
+
+        <property
+            name="acceptIdea"
+                    column="acceptIdea"
+                length="1000"
+        >
+
+        </property>
+
+        <property
+            name="acceptDate"
+                    column="acceptDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="acceptMan"
+                    column="acceptMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="caseStatus"
+                    column="caseStatus"
+                length="1"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

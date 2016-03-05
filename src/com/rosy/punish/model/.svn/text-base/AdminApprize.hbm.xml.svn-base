@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.punish.model.AdminApprize"
+            table="adminapprize"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof--><generator class="uuid.hex">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="adminOrder"
+                    column="adminOrder"
+                length="2"
+        >
+
+        </property>
+
+        <property
+            name="keyWord"
+                    column="keyWord"
+                length="4"
+        >
+
+        </property>
+
+        <property
+            name="announce"
+                    column="announce"
+                length="8000"
+        >
+
+        </property>
+
+        <property
+            name="dispatchOrg"
+                    column="dispatchOrg"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="linkman"
+                    column="linkman"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="linkPhone"
+                    column="linkPhone"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="dispatchDate"
+                    column="dispatchDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

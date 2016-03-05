@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/taglib
+END
+ConstantsTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/taglib/ConstantsTag.java
+END
+ConstantsTei.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/taglib/ConstantsTei.java
+END
+CountryTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/taglib/CountryTag.java
+END
+LabelTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/taglib/LabelTag.java
+END
+UnitsTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/webapp/taglib/UnitsTag.java
+END

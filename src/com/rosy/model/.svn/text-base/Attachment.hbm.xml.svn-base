@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class lazy="false" name="com.rosy.model.Attachment" table="attachment">
+  <id column="id" name="id" type="java.lang.String">
+   <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag instead -->
+   <generator class="uuid.hex"/>
+  </id>
+  <property column="table_Id" generated="never" lazy="false" length="48"
+   name="tableId" type="java.lang.String"/>
+  <property column="table_Name" generated="never" lazy="false"
+   length="32" name="tableName" type="java.lang.String"/>
+  <property column="table_Field" generated="never" lazy="false"
+   length="32" name="tableField" type="java.lang.String"/>
+  <property column="file_Name" generated="never" lazy="false"
+   length="48" name="fileName" type="java.lang.String"/>
+  <property column="type" generated="never" lazy="false" length="32"
+   name="type" type="java.lang.String"/>
+  <property column="path" generated="never" lazy="false" length="78"
+   name="path" type="java.lang.String"/>
+  <property column="full_Path" generated="never" lazy="false"
+   length="108" name="fullPath" type="java.lang.String"/>
+  <property column="upload_User" generated="never" lazy="false"
+   length="32" name="uploadUser" type="java.lang.String"/>
+  <property column="upload_Time" generated="never" lazy="false"
+   length="8" name="uploadTime" type="timestamp"/>
+  <property column="status" generated="never" lazy="false" length="1"
+   name="status" type="java.lang.String"/>
+  <property column="remark" generated="never" lazy="false" length="2000"
+   name="remark" type="java.lang.String"/>
+ </class>
+</hibernate-mapping>

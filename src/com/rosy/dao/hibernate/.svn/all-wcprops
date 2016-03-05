@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/dao/hibernate
+END
+PendingRequestDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/dao/hibernate/PendingRequestDaoHibernate.java
+END
+BaseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/dao/hibernate/BaseDaoHibernate.java
+END
+ApcaOrganizationDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/dao/hibernate/ApcaOrganizationDaoHibernate.java
+END
+LookupDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/dao/hibernate/LookupDaoHibernate.java
+END
+RoleDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/dao/hibernate/RoleDaoHibernate.java
+END
+AttachmentDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/dao/hibernate/AttachmentDaoHibernate.java
+END
+UserDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/dao/hibernate/UserDaoHibernate.java
+END
+SysLogDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/dao/hibernate/SysLogDaoHibernate.java
+END

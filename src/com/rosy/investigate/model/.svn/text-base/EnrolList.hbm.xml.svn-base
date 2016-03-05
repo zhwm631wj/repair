@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.rosy.investigate.model.EnrolList"
+		table="enrollist">
+
+		<id name="id" column="ID" type="java.lang.String">
+
+			<!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof-->
+			<generator class="uuid">
+
+			</generator>
+
+		</id>
+
+		<property name="listId" column="listID" length="48">
+
+		</property>
+
+		<property name="depNum" column="depNum" length="12">
+
+		</property>
+
+		<property name="adminOrder" column="adminOrder" length="2">
+
+		</property>
+
+		<property name="keyWord" column="keyWord" length="4">
+
+		</property>
+
+		<property name="serialNum" column="serialNum" length="4">
+
+		</property>
+
+		<property name="problemDescribe" column="problemDescribe"
+			length="2000">
+
+		</property>
+
+		<property name="keepedBy" column="keepedBy" length="2000">
+
+		</property>
+
+		<property name="keepPlace" column="keepPlace" length="200">
+
+		</property>
+
+		<property name="keeper" column="keeper" length="30">
+
+		</property>
+
+		<property name="keepDate" column="keepDate" length="19">
+
+		</property>
+
+		<property name="createDate" column="createDate" length="19">
+
+		</property>
+
+		<property name="rflag" column="rFlag" length="1">
+
+		</property>
+
+		<property name="remark" column="remark" length="200">
+
+		</property>
+
+	</class>
+
+</hibernate-mapping>
+

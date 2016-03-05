@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/impl
+END
+LookupManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/54/trunk/apca/src/com/rosy/service/impl/LookupManagerImpl.java
+END
+PendingRequestManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/service/impl/PendingRequestManagerImpl.java
+END
+AttachmentManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/service/impl/AttachmentManagerImpl.java
+END
+RoleManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/impl/RoleManagerImpl.java
+END
+BaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/impl/BaseManager.java
+END
+SysLogManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/service/impl/SysLogManagerImpl.java
+END
+ApcaOrganizationManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/service/impl/ApcaOrganizationManagerImpl.java
+END
+UserManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/service/impl/UserManagerImpl.java
+END

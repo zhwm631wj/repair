@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao
+END
+TransmitReturnReceiptDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/TransmitReturnReceiptDao.java
+END
+PropertyKeepListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/PropertyKeepListDao.java
+END
+ForceWritDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/ForceWritDao.java
+END
+CheckProxyItemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/dao/CheckProxyItemDao.java
+END
+ReleaseForceWritDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/ReleaseForceWritDao.java
+END
+CheckItemDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/CheckItemDao.java
+END
+EnrolListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/EnrolListDao.java
+END
+ExamProceedingDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/ExamProceedingDao.java
+END
+CheckupProxyDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/dao/CheckupProxyDao.java
+END
+OtherCertDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/OtherCertDao.java
+END
+PropertyListDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/PropertyListDao.java
+END
+CheckupReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/CheckupReportDao.java
+END
+BusinessLicenseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/BusinessLicenseDao.java
+END

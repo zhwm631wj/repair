@@ -1,0 +1,242 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */ /* NAV */
+div#nav {
+	margin: 0 0 0 0;
+    padding: 0;
+	position: relative;
+	font-size: 0.9em;
+	border-bottom: 0px solid #d7e9f5;
+}
+
+* html div#nav { /* hide ie/mac \*/
+	height: 1%;
+	/* end hide */
+}
+
+div#nav div.wrapper {
+	background: transparent url(../../images/bg_panel.gif) repeat-x 0 -2px;
+	z-index: 9999; position : absolute;
+	width:951px;
+	left: 0;
+	bottom: 0;
+}
+
+div#nav ul {
+	z-index: 9999;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2em;
+	list-style: none;
+}
+
+div#nav li {
+	float: left;
+	display: inline;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+div#nav li.last {
+	border-right: none;
+}
+
+div#nav a,div#nav a:link,div#nav a:active,div#nav a:visited {
+	filter: Alpha(opacity=90);   
+    -moz-opacity:.8;   
+    opacity:0.8;  
+    background: transparent url(../../images/bg_panel.gif) repeat-x 0 -200px;
+	display: inline-block;
+	/* hide from ie/mac \*/
+	display: block;
+	/* end hide */
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0;
+	padding: 5px 15px 5px 15px;
+	
+}
+
+div#nav a:hover {
+	text-decoration: none;
+	background-color: #ebf5fc;
+}
+
+div#nav a.current {
+	display: inline-block;
+	/* hide from ie/mac \*/
+	display: block;
+	/* end hide */
+	color: #364158;
+	background: #364158;
+	font-size: 1.1em !important;
+}
+
+div#nav a.current,div#nav a.current:link,div#nav a.current:active,div#nav a.current:visited,div#nav a.current:hover
+	{
+	color: #FFF701;
+	background:  transparent url(../../images/bg_panel.gif) repeat-x 0 -190px;
+}
+
+div#nav .pad {
+	padding-left: 10px;
+}
+
+/* END NAV */ /* DROP DOWN MENUS */
+ul#primary-nav,ul#primary-nav ul {
+	margin: 0;
+	padding: 0;
+	background: #fff; /* IE6 Bug */
+	font-size: 100%;
+}
+
+ul#primary-nav li {
+	position: relative;
+	list-style: none;
+}
+
+ul#primary-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #DDDBE6;
+	width: 95px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul#primary-nav li {
+	float: left;
+	height: 1%;
+}
+
+* html ul#primary-nav li a {
+	height: 1%;
+}
+
+* html ul#primary-nav ul {
+	width: 149px;
+}
+
+* html ul#primary-nav ul li {
+	width: 149px;
+}
+
+/* End */
+ul#primary-nav ul {
+	position: absolute;
+	display: none;
+	left: 0px; /* Set 1px less than menu width */
+	top: 22px;
+}
+
+ul#primary-nav ul li {
+
+	border-bottom: 0;
+	font-size: 1em;
+}
+
+ul#primary-nav ul li ul {
+	margin-left: 149px;
+	margin-top: -23px;
+}
+
+ul#primary-nav ul li.last {
+}
+
+ul#primary-nav li ul li a {
+	padding: 3px 5px;
+	text-align: left;
+	width: 119px
+}
+
+/* Sub Menu Styles */
+ul#primary-nav li:hover ul ul,ul#primary-nav li:hover ul ul ul,ul#primary-nav li.over ul ul,ul#primary-nav li.over ul ul ul
+	{
+	display: none;
+}  /* Hide sub-menus initially */
+ul#primary-nav li:hover ul,ul#primary-nav li li:hover ul,ul#primary-nav li li li:hover ul,ul#primary-nav li.over ul,ul#primary-nav li li.over ul,ul#primary-nav li li li.over ul
+	{
+	display: block;
+}  /* The magic */
+ul#primary-nav li.menubar {
+	background: transparent url(../../images/arrow.gif) right center
+		no-repeat;
+}
+
+ul#primary-nav li:hover,ul#primary-nav li.over {
+	background: url(../../images/bg_panel.gif) repeat-x 0 -200px;
+}
+
+ul#primary-nav li a:hover {
+	filter:Blur(Add="1",Direction="30",Strength="1");
+	background: url(../../images/bg_panel.gif) repeat-x 0 -200px;
+	color: #FFF701;
+}
+
+/* END DROP DOWN MENUS */
+.breadcrumb {
+	z-index: inherit;
+	position: relative;
+	height: 26px;
+	top:0px;
+	width:950px;
+	background: #E7EEEE url(../../images/bg_panel.gif) repeat-x 0 -34px;
+	overflow: hidden;
+}
+
+.breadcrumb ul {
+	margin: 4px 25px;
+	padding-left: 0px;
+}
+
+.breadcrumb li {
+	display: inline;
+	padding: 0px 2px 0px 16px;
+	margin-right: 8px;
+	background: transparent url(../../images/split.gif) no-repeat 0 50%; *
+	background-position: 0 0;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.breadcrumb li.first {
+	padding: 0px;
+	background-image: transparent url(../../images/home.gif) no-repeat;
+	height: 0px;
+	line-height: 0px;
+	width: 16px;
+}
+
+.breadcrumb a,.breadcrumb a:link,.breadcrumb a:visited,.breadcrumb a:hover,.breadcrumb a:active
+	{
+	color: #1b5994;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.breadcrumb a.curr,.breadcrumb a.curr:link,.breadcrumb a.curr:visited,.breadcrumb a.curr:hover,.breadcrumb a.curr:active
+	{
+	
+}
+
+.breadcrumb a.home,.breadcrumb a.home:link,.breadcrumb a.home:visited,.breadcrumb a.home:hover,.breadcrumb a.home:active
+	{
+	display: -moz-inline-box; *
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.real-wrap {
+	width: 900px;
+	text-align: left;
+	margin: 10 auto;
+}

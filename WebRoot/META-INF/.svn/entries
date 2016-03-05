@@ -1,0 +1,54 @@
+8
+
+dir
+16
+https://apca.googlecode.com/svn/trunk/apca/WebRoot/META-INF
+https://apca.googlecode.com/svn
+
+
+
+2008-10-20T05:02:43.300509Z
+16
+zhwm631wj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+295a6d74-9d32-11dd-9476-71c886a649bc
+
+MANIFEST.MF
+file
+
+
+
+
+2008-10-19T14:40:40.000000Z
+1a520232278f3fcfb6fcc7f2e506ff7f
+2008-10-20T05:02:43.300509Z
+16
+zhwm631wj
+has-props
+
+context.xml
+file
+27
+
+
+
+2008-10-25T16:28:55.664000Z
+0bbc5f2dd3f04fc237dba73fc8e72b6c
+2008-10-28T14:53:17.965513Z
+27
+zhwm631wj
+has-props
+

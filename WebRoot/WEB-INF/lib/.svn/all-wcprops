@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib
+END
+commons-io.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-io.jar
+END
+cglib-2.1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/cglib-2.1.3.jar
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/struts.jar
+END
+displaytag-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/displaytag-1.1.jar
+END
+clickstream-1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/clickstream-1.0.2.jar
+END
+dwr.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/dwr.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/dom4j-1.6.1.jar
+END
+mssqlserver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/mssqlserver.jar
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/jstl.jar
+END
+acegi-security-1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/acegi-security-1.0.2.jar
+END
+aspectjweaver-1.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/aspectjweaver-1.5.2.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/activation.jar
+END
+commons-lang.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-lang.jar
+END
+jta.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/jta.jar
+END
+msbase.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/msbase.jar
+END
+commons-dbcp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/commons-dbcp.jar
+END
+sitemesh-2.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/sitemesh-2.2.1.jar
+END
+spring.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/spring.jar
+END
+apcasu-service.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/apcasu-service.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-logging-1.1.jar
+END
+antlr.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/antlr.jar
+END
+commons-validator.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-validator.jar
+END
+itext-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/itext-1.4.jar
+END
+mail.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/mail.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/lib/jdom.jar
+END
+struts-menu-2.4.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/struts-menu-2.4.2.jar
+END
+commons-collections.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/commons-collections.jar
+END
+standard.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/standard.jar
+END
+log4j-1.2.11.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/log4j-1.2.11.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/hibernate3.jar
+END
+commons-fileupload.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-fileupload.jar
+END
+jakarta-oro.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/jakarta-oro.jar
+END
+ehcache-1.2.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/ehcache-1.2.3.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/commons-codec-1.3.jar
+END
+asm.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/asm.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31/trunk/apca/WebRoot/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+commons-beanutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/commons-beanutils.jar
+END
+velocity-tools-view-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/velocity-tools-view-1.1.jar
+END
+struts-el.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/struts-el.jar
+END
+msutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/msutil.jar
+END
+urlrewrite-3.0-beta.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/urlrewrite-3.0-beta.jar
+END
+mysql-connector-java-5.0.3-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/mysql-connector-java-5.0.3-bin.jar
+END
+antlr-2.7.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/antlr-2.7.6.jar
+END
+oscache-2.3.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/oscache-2.3.2.jar
+END
+apcasu-dao.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/apcasu-dao.jar
+END
+velocity-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/22/trunk/apca/WebRoot/WEB-INF/lib/velocity-1.4.jar
+END
+commons-digester.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/20/trunk/apca/WebRoot/WEB-INF/lib/commons-digester.jar
+END
+commons-pool.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/21/trunk/apca/WebRoot/WEB-INF/lib/commons-pool.jar
+END

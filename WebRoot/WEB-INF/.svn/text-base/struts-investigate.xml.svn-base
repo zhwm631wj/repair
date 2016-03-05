@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- ========== Data Sources Definitions =================================== -->
+	<!--
+		Define your Struts data sources in a file called struts-data-sources.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans>
+		<form-bean name="checkupReportForm"
+			type="com.rosy.investigate.webapp.form.CheckupReportForm" />
+		<form-bean name="releaseForceWritForm"
+			type="com.rosy.investigate.webapp.form.ReleaseForceWritForm" />
+		<form-bean name="forceWritForm"
+			type="com.rosy.investigate.webapp.form.ForceWritForm" />
+		<form-bean name="examProceedingForm"
+			type="com.rosy.investigate.webapp.form.ExamProceedingForm" />
+		<form-bean name="propertyListForm"
+			type="com.rosy.investigate.webapp.form.PropertyListForm" />
+		<form-bean name="transmitReturnReceiptForm"
+			type="com.rosy.investigate.webapp.form.TransmitReturnReceiptForm" />
+		<form-bean name="businessLicenseForm"
+			type="com.rosy.investigate.webapp.form.BusinessLicenseForm" />
+		<form-bean name="checkItemForm"
+			type="com.rosy.investigate.webapp.form.CheckItemForm" />
+		<form-bean name="otherCertForm"
+			type="com.rosy.investigate.webapp.form.OtherCertForm" />
+		<form-bean name="enrolListForm"
+			type="com.rosy.investigate.webapp.form.EnrolListForm" />
+		<form-bean name="propertyKeepListForm"
+			type="com.rosy.investigate.webapp.form.PropertyKeepListForm" />
+		<form-bean name="checkupProxyForm"
+			type="com.rosy.investigate.webapp.form.CheckupProxyForm" />
+		<form-bean name="checkProxyItemForm"
+			type="com.rosy.investigate.webapp.form.CheckProxyItemForm" />
+	</form-beans>
+
+	<!-- ========== Action Mapping Definitions =================================== -->
+	<action-mappings>
+		<action path="/enrolLists"
+			type="com.rosy.investigate.webapp.action.EnrolListAction"
+			name="enrolListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/enrolListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/enrolListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/enrolLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editEnrolList"
+			type="com.rosy.investigate.webapp.action.EnrolListAction"
+			name="enrolListForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/enrolListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/enrolListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/enrolLists.html"
+				redirect="true" />
+		</action>
+		<action path="/saveEnrolList"
+			type="com.rosy.investigate.webapp.action.EnrolListAction"
+			name="enrolListForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/enrolListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/enrolListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/enrolLists.html"
+				redirect="true" />
+		</action>
+		<!-- 财务清单 -->
+		<action path="/propertyLists"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editPropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/savePropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyLists.html"
+				redirect="true" />
+		</action>
+
+       
+		<action path="/examProceedings"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/examProceedingForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/examProceedingList.jsp"
+				redirect="false" />
+			<forward name="search" path="/examProceedings.html"
+				redirect="true" />
+		</action>
+		<action path="/editExamProceeding"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/examProceedingForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/examProceedingList.jsp"
+				redirect="false" />
+			<forward name="search" path="/examProceedings.html"
+				redirect="true" />
+		</action>
+		<action path="/saveExamProceeding"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/examProceedingForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/examProceedingList.jsp"
+				redirect="false" />
+			<forward name="search" path="/examProceedings.html"
+				redirect="true" />
+		</action>
+	
+		<!-- 送达回证 -->
+		<action path="/transmitReturnReceipts"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/transmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/editTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/transmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/transmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+
+
+		<action path="/otherCerts"
+			type="com.rosy.investigate.webapp.action.OtherCertAction"
+			name="otherCertForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/otherCertForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/otherCertList.jsp"
+				redirect="false" />
+			<forward name="search" path="/otherCerts.html"
+				redirect="true" />
+		</action>
+		<action path="/editOtherCert"
+			type="com.rosy.investigate.webapp.action.OtherCertAction"
+			name="otherCertForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/otherCertForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/otherCertList.jsp"
+				redirect="false" />
+			<forward name="search" path="/otherCerts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveOtherCert"
+			type="com.rosy.investigate.webapp.action.OtherCertAction"
+			name="otherCertForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/otherCertForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/otherCertList.jsp"
+				redirect="false" />
+			<forward name="search" path="/otherCerts.html"
+				redirect="true" />
+		</action>
+		<action path="/businessLicenses"
+			type="com.rosy.investigate.webapp.action.BusinessLicenseAction"
+			name="businessLicenseForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/businessLicenseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/businessLicenseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/businessLicenses.html"
+				redirect="true" />
+		</action>
+		<action path="/editBusinessLicense"
+			type="com.rosy.investigate.webapp.action.BusinessLicenseAction"
+			name="businessLicenseForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/businessLicenseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/businessLicenseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/businessLicenses.html"
+				redirect="true" />
+		</action>
+		<action path="/saveBusinessLicense"
+			type="com.rosy.investigate.webapp.action.BusinessLicenseAction"
+			name="businessLicenseForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/businessLicenseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/businessLicenseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/businessLicenses.html"
+				redirect="true" />
+		</action>
+		 <!-- 证据的取得 -->
+		 
+		 <action path="/checkProxyItems"
+			type="com.rosy.investigate.webapp.action.CheckProxyItemAction"
+			name="checkProxyItemForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkProxyItems.html"
+				redirect="true" />
+		</action>
+		<action path="/editCheckProxyItem"
+			type="com.rosy.investigate.webapp.action.CheckProxyItemAction"
+			name="checkProxyItemForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkProxyItems.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCheckProxyItem"
+			type="com.rosy.investigate.webapp.action.CheckProxyItemAction"
+			name="checkProxyItemForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkProxyItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkProxyItems.html"
+				redirect="true" />
+		</action>
+
+		<action path="/checkItems"
+			type="com.rosy.investigate.webapp.action.CheckItemAction"
+			name="checkItemForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkItems.html"
+				redirect="true" />
+		</action>
+		<action path="/editCheckItem"
+			type="com.rosy.investigate.webapp.action.CheckItemAction"
+			name="checkItemForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkItems.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCheckItem"
+			type="com.rosy.investigate.webapp.action.CheckItemAction"
+			name="checkItemForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkItemForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkItemList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkItems.html"
+				redirect="true" />
+		</action>
+		<action path="/checkupReports"
+			type="com.rosy.investigate.webapp.action.CheckupReportAction"
+			name="checkupReportForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupReports.html"
+				redirect="true" />
+		</action>
+		<action path="/editCheckupReport"
+			type="com.rosy.investigate.webapp.action.CheckupReportAction"
+			name="checkupReportForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupReports.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCheckupReport"
+			type="com.rosy.investigate.webapp.action.CheckupReportAction"
+			name="checkupReportForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupReports.html"
+				redirect="true" />
+		</action>
+
+		<action path="/checkupProxys"
+			type="com.rosy.investigate.webapp.action.CheckupProxyAction"
+			name="checkupProxyForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupProxys.html"
+				redirect="true" />
+		</action>
+		<action path="/editCheckupProxy"
+			type="com.rosy.investigate.webapp.action.CheckupProxyAction"
+			name="checkupProxyForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupProxys.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCheckupProxy"
+			type="com.rosy.investigate.webapp.action.CheckupProxyAction"
+			name="checkupProxyForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/checkupProxyList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupProxys.html"
+				redirect="true" />
+					</action>	
+				<!-- 送达回证 -->
+		<action path="/checkupTransmitReturnReceipts"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/editCheckupTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCheckupTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/checkup/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/checkupTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+				
+				
+				<!-- 检查取证结束 -->
+	<!-- 当事人列表 -->
+
+			<action path="/partyInfos"
+			type="com.rosy.register.webapp.action.PartyInfoAction"
+			name="partyInfoForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partyInfoForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partyInfoList.jsp" redirect="false" />
+			<forward name="search" path="/partyInfos.html"
+				redirect="true" />
+		</action>
+		
+		<!-- 当事人 -->
+		<action path="/editPartyInfo"
+			type="com.rosy.register.webapp.action.PartyInfoAction"
+			name="partyInfoForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partyInfoForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partyInfoList.jsp" redirect="false" />
+			<forward name="search" path="/partyInfos.html"
+				redirect="true" />
+		</action>
+		<action path="/editPartyTabs"
+			type="com.rosy.register.webapp.action.PartyInfoAction"
+			name="partyInfoForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partytabs.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partyInfoList.jsp" redirect="false" />
+			<forward name="search" path="/partyInfos.html"
+				redirect="true" />
+		</action>
+		<action path="/savePartyInfo"
+			type="com.rosy.register.webapp.action.PartyInfoAction"
+			name="partyInfoForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partyInfoForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partyInfoList.jsp" redirect="false" />
+			<forward name="search" path="/partyInfos.html"
+				redirect="true" />
+		</action>
+		<!-- 当事人代表 -->
+			<action path="/partySpokesmans"
+			type="com.rosy.register.webapp.action.PartySpokesmanAction"
+			name="partySpokesmanForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partySpokesmanForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partySpokesmanList.jsp"
+				redirect="false" />
+			<forward name="search" path="/partySpokesmans.html"
+				redirect="true" />
+		</action>
+		<action path="/editPartySpokesman"
+			type="com.rosy.register.webapp.action.PartySpokesmanAction"
+			name="partySpokesmanForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partySpokesmanForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partySpokesmanList.jsp"
+				redirect="false" />
+			<forward name="search" path="/partySpokesmans.html"
+				redirect="true" />
+		</action>
+		<action path="/savePartySpokesman"
+			type="com.rosy.register.webapp.action.PartySpokesmanAction"
+			name="partySpokesmanForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/partySpokesmanForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/partySpokesmanList.jsp"
+				redirect="false" />
+			<forward name="search" path="/partySpokesmans.html"
+				redirect="true" />
+		</action>
+				<!-- 强制措施的开始 -->
+					<!--  财务清单-->
+		<action path="/coercePropertyLists"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coercePropertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editCoercePropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coercePropertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCoercePropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coercePropertyLists.html"
+				redirect="true" />
+		</action>
+				
+		 <!-- 强制审批第一步草拟 -->
+			<action path="/editCoerceStep1"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep1.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveCoerceStep1"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep1.jsp"
+				redirect="false" />
+			<forward name="next" path="/editCoerceStep2.html"
+				redirect="true" />
+		</action>
+			 <!-- 强制审批第二步 所长-->
+			<action path="/editCoerceStep2"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep2.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveCoerceStep2"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep2.jsp"
+				redirect="false" />
+			<forward name="next" path="/editCoerceStep3.html"
+				redirect="true" />
+		</action>
+			 <!-- 强制审批第三步法规股 -->
+			<action path="/editCoerceStep3"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep3.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveCoerceStep3"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep3.jsp"
+				redirect="false" />
+			<forward name="next" path="/editCoerceStep4.html"
+				redirect="true" />
+		</action>
+		<!-- 强制文书 -->
+		<action path="/forceWrits"
+			type="com.rosy.investigate.webapp.action.ForceWritAction"
+			name="forceWritForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/forceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/forceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/forceWrits.html"
+				redirect="true" />
+		</action>
+		<action path="/editForceWrit"
+			type="com.rosy.investigate.webapp.action.ForceWritAction"
+			name="forceWritForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/forceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/forceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/forceWrits.html"
+				redirect="true" />
+		</action>
+		<action path="/saveForceWrit"
+			type="com.rosy.investigate.webapp.action.ForceWritAction"
+			name="forceWritForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/forceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/forceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/forceWrits.html"
+				redirect="true" />
+		</action>	
+			 <!-- 强制审批第四步局长 -->
+			<action path="/editCoerceStep4"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep4.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveCoerceStep4"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/coerceStep4.jsp"
+				redirect="false" />
+			<forward name="next" path="/editCoerceStep5.html"
+				redirect="true" />
+		</action>
+				<!-- 入库证明-->
+		<action path="/propertyKeepLists"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyKeepLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editPropertyKeepList"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyKeepLists.html"
+				redirect="true" />
+		</action>
+		<action path="/savePropertyKeepList"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/propertyKeepListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyKeepLists.html"
+				redirect="true" />
+		</action>
+				<action path="/coerceTransmitReturnReceipts"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coerceTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/editCoerceTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coerceTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCoerceTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/coerce/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/coerceTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<!-- 强制措施的结束 -->
+		<!-- 解除强制措施 -->
+						<!--  财务清单-->
+		<action path="/rescindPropertyLists"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editRescindPropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyLists.html"
+				redirect="true" />
+		</action>
+		<action path="/saveRescindPropertyList"
+			type="com.rosy.investigate.webapp.action.PropertyListAction"
+			name="propertyListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/rescindPropertyLists.html"
+				redirect="true" />
+		</action>
+		 <!-- 解除强制审批第一步草拟 -->
+			<action path="/editRescindStep1"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep1.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRescindStep1"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep1.jsp"
+				redirect="false" />
+			<forward name="next" path="/editRescindStep2.html"
+				redirect="true" />
+		</action>
+			 <!-- 解除强制审批第二步 所长-->
+			<action path="/editRescindStep2"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep2.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRescindStep2"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep2.jsp"
+				redirect="false" />
+			<forward name="next" path="/editRescindStep3.html"
+				redirect="true" />
+		</action>
+			 <!-- 解除强制审批第三步法规股 -->
+			<action path="/editRescindStep3"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep3.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRescindStep3"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep3.jsp"
+				redirect="false" />
+			<forward name="next" path="/editRescindStep4.html"
+				redirect="true" />
+		</action>
+		
+		<!-- 解除强制措施通知 -->
+		<action path="/releaseForceWrits"
+			type="com.rosy.investigate.webapp.action.ReleaseForceWritAction"
+			name="releaseForceWritForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/releaseForceWrits.html"
+				redirect="true" />
+		</action>
+		<action path="/editReleaseForceWrit"
+			type="com.rosy.investigate.webapp.action.ReleaseForceWritAction"
+			name="releaseForceWritForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/releaseForceWrits.html"
+				redirect="true" />
+		</action>
+		<action path="/saveReleaseForceWrit"
+			type="com.rosy.investigate.webapp.action.ReleaseForceWritAction"
+			name="releaseForceWritForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/releaseForceWritList.jsp"
+				redirect="false" />
+			<forward name="search" path="/releaseForceWrits.html"
+				redirect="true" />
+		</action>
+		
+			 <!-- 强制审批第四步局长 -->
+			<action path="/editRescindStep4"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep4.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRescindStep4"
+			type="com.rosy.investigate.webapp.action.ExamProceedingAction"
+			name="examProceedingForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/rescindStep4.jsp"
+				redirect="false" />
+			<forward name="next" path="/editRescindStep5.html"
+				redirect="true" />
+		</action>
+				<!-- 出库证明-->
+		<action path="/propertyOutLists"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyOutLists.html"
+				redirect="true" />
+		</action>
+		<action path="/editPropertyOutList"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyOutLists.html"
+				redirect="true" />
+		</action>
+		<action path="/savePropertyOutList"
+			type="com.rosy.investigate.webapp.action.PropertyKeepListAction"
+			name="propertyKeepListForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/propertyOutListList.jsp"
+				redirect="false" />
+			<forward name="search" path="/propertyOutLists.html"
+				redirect="true" />
+		</action>
+		<!-- 送达回证 -->
+		<action path="/rescindTransmitReturnReceipts"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/rescindTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/editRescindTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/rescindTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveRescindTransmitReturnReceipt"
+			type="com.rosy.investigate.webapp.action.TransmitReturnReceiptAction"
+			name="transmitReturnReceiptForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/investigate/rescind/transmitReturnReceiptList.jsp"
+				redirect="false" />
+			<forward name="search" path="/rescindTransmitReturnReceipts.html"
+				redirect="true" />
+		</action>
+		<!-- 解除强制措施的结束 -->
+	</action-mappings>
+</struts-config>

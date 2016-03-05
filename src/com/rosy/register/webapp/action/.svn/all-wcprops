@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/webapp/action
+END
+InspectMarketAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/webapp/action/InspectMarketAction.java
+END
+RegisterApprovalAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/57/trunk/apca/src/com/rosy/register/webapp/action/RegisterApprovalAction.java
+END
+PartySpokesmanAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/webapp/action/PartySpokesmanAction.java
+END
+CaseReportAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/59/trunk/apca/src/com/rosy/register/webapp/action/CaseReportAction.java
+END
+SceneCheckAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/webapp/action/SceneCheckAction.java
+END
+PartyInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/webapp/action/PartyInfoAction.java
+END

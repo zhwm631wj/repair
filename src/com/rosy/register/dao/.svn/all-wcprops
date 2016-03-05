@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao
+END
+SceneCheckDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/SceneCheckDao.java
+END
+InspectMarketDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/InspectMarketDao.java
+END
+PartyInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/PartyInfoDao.java
+END
+PartySpokesmanDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/PartySpokesmanDao.java
+END
+CaseReportDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/CaseReportDao.java
+END
+RegisterApprovalDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/dao/RegisterApprovalDao.java
+END

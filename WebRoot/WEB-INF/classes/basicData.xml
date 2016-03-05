@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+
+
+	        <!-- 权限模块 -->
+    <RIGHT_MODULE desc="权限模块">
+    	<RIGHT_MODULE_handle code="01" desc="路面质量检查" />
+    	<RIGHT_MODULE_handle code="02" desc="统计报表" />
+    	<RIGHT_MODULE_handle code="03" desc="系统设置" />
+    </RIGHT_MODULE>
+    
+        <ROAD_RIGHT_MODULE desc="路面质量检查">
+    	<ROAD_RIGHT_MODULE_handle code="001" desc="路面质量查询" />
+    	<ROAD_RIGHT_MODULE_handle code="002" desc="路面质量管理" />
+    	<ROAD_RIGHT_MODULEhandle code="003" desc="路面质量查看" />
+   		 </ROAD_RIGHT_MODULE>
+    
+        <STAT_RIGHT_MODULE desc="统计报表">
+    	<STAT_RIGHT_MODULE_handle code="011" desc="路面质量检查" />
+    	</STAT_RIGHT_MODULE>
+    	
+        <SYSTEM_RIGHT_MODULE desc="系统管理">
+    	<SYSTEM_RIGHT_MODULE_handle code="021" desc="用户管理" />
+    	<SYSTEM_RIGHT_MODULE_handle code="022" desc="日志管理" />
+    	<SYSTEM_RIGHT_MODULE_handle code="023" desc="个人管理" />
+    	</SYSTEM_RIGHT_MODULE>
+	<!-- 行政区划-->
+	<ADMINISTRATIVE desc="行政区划">
+		<ADMINISTRATIVE_handle code="440301" desc="市辖区" />
+		<ADMINISTRATIVE_handle code="440303" desc="罗湖区" />
+		<ADMINISTRATIVE_handle code="440304" desc="福田区" />
+		<ADMINISTRATIVE_handle code="440305" desc="南山区" />
+		<ADMINISTRATIVE_handle code="440306" desc="宝安区" />
+		<ADMINISTRATIVE_handle code="440307" desc="龙岗区" />
+		<ADMINISTRATIVE_handle code="440308" desc="盐田区" />
+	</ADMINISTRATIVE>
+				<!--部门-->
+	<DEPARTMENT_LIST desc="所属部门">
+		<DEPARTMENT_LIST_handle code="00"  desc="其它"/>
+		<DEPARTMENT_LIST_handle code="01"  desc="MIS部门"/>
+		<DEPARTMENT_LIST_handle code="02"  desc="GIS部门"/>
+		<DEPARTMENT_LIST_handle code="03"  desc="业务部"/>
+		<DEPARTMENT_LIST_handle code="04"  desc="行政部"/>
+		<DEPARTMENT_LIST_handle code="05"  desc="财务部"/>
+	</DEPARTMENT_LIST>
+					<!--职位-->
+	<POSITION_LIST desc="所属职位">
+		<POSITION_LIST_handle code="01"  desc="程序员"/>
+		<POSITION_LIST_handle code="02"  desc="业务员"/>
+		<POSITION_LIST_handle code="03"  desc="经理"/>
+		<POSITION_LIST_handle code="04"  desc="总工"/>
+		<POSITION_LIST_handle code="05"  desc="会计"/>
+		<POSITION_LIST_handle code="06"  desc="前台"/>
+	</POSITION_LIST>
+	<!-- 路线类型 -->
+	<ROAD_TYPE desc="路线类型">
+		<ROAD_TYPE_handle code="G" desc="国道(G)" />
+		<ROAD_TYPE_handle code="S" desc="省道(S)" />
+		<ROAD_TYPE_handle code="X" desc="县道(X)" />
+		<ROAD_TYPE_handle code="Z" desc="专道(Z)" />
+		<ROAD_TYPE_handle code="Y" desc="乡道(Y)" />
+		<ROAD_TYPE_handle code="C" desc="村道(C)" />
+
+	</ROAD_TYPE>
+	<!-- 路线等级-->
+	<ROUTE_LEVEL desc="路线等级">
+		<ROUTE_LEVEL_handle code="0" desc="高速公路"/>
+		<ROUTE_LEVEL_handle code="1" desc="一级公路"/>
+		<ROUTE_LEVEL_handle code="2" desc="二级公路"/>
+		<ROUTE_LEVEL_handle code="3" desc="三级公路"/>
+		<ROUTE_LEVEL_handle code="4" desc="四级公路"/>
+		<ROUTE_LEVEL_handle code="5" desc="等外路"/>
+	</ROUTE_LEVEL>
+			<!--管养单位所属部门-->
+	<BRIDGE_MANAGER_TYPE desc="管养单位所属部门">
+		<BRIDGE_MANAGER_TYPE_handle code="1"  desc="公路管理部门"/>
+		<BRIDGE_MANAGER_TYPE_handle code="2"  desc="公路生产部门"/>
+		<BRIDGE_MANAGER_TYPE_handle code="3"  desc="高速公路公司"/>
+		<BRIDGE_MANAGER_TYPE_handle code="4"  desc="城管部门"/>
+		<BRIDGE_MANAGER_TYPE_handle code="5"  desc="人行天桥管理部门"/>
+		<BRIDGE_MANAGER_TYPE_handle code="0"  desc="其它"/>
+	</BRIDGE_MANAGER_TYPE>
+          
+	<!-- 检查信息表中的调查方向 -->
+    <CHECK_MAIN_DIRECTION desc="调查方向"> 
+    	<CHECK_MAIN_DIRECTION_handle code="1" desc="上行"/>
+    	<CHECK_MAIN_DIRECTION_handle code="2" desc="下行"/>
+    	<CHECK_MAIN_DIRECTION_handle code="3" desc="单道"/>
+    </CHECK_MAIN_DIRECTION>
+    
+    <!-- 路面类型 -->
+    <CHECK_TYPE desc="路面类型">
+    	<CHECK_TYPE_handle code="1" desc="沥青路面" />
+    	<CHECK_TYPE_handle code="2" desc="水泥混凝土路面" />
+    	<CHECK_TYPE_handle code="3" desc="砂石路面" />
+    </CHECK_TYPE>
+	
+	<ROAD_LEVEL desc="路线等级">
+		<ROAD_LEVEL_handle code="1" desc="高速公路" />
+		<ROAD_LEVEL_handle code="2" desc="一级公路" />
+		<ROAD_LEVEL_handle code="3" desc="二级公路" />
+		<ROAD_LEVEL_handle code="4" desc="三级公路" />
+		<ROAD_LEVEL_handle code="5" desc="四级公路" />
+		<ROAD_LEVEL_handle code="6" desc="其他类型" />
+	</ROAD_LEVEL>
+</Config>

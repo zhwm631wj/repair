@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+    <!-- Hibernate SessionFactory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mappingResources">
+            <list>
+                <value>com/rosy/model/Role.hbm.xml</value>
+                <value>com/rosy/model/User.hbm.xml</value>
+                <value>com/rosy/model/Attachment.hbm.xml</value>
+				<value>com/rosy/model/ApcaOrganization.hbm.xml</value>
+				<value>com/rosy/model/PendingRequest.hbm.xml</value>
+     			<value>com/rosy/model/SysLog.hbm.xml</value>
+     			<value>com/rosy/register/model/PartySpokesman.hbm.xml</value>
+     			<value>com/rosy/register/model/PartyInfo.hbm.xml</value>
+     			<value>com/rosy/register/model/InspectMarket.hbm.xml</value>
+     			<value>com/rosy/register/model/CaseReport.hbm.xml</value>
+     			<value>com/rosy/register/model/SceneCheck.hbm.xml</value>
+     			<value>com/rosy/register/model/RegisterApproval.hbm.xml</value>
+     			<value>com/rosy/investigate/model/ForceWrit.hbm.xml</value>     			     			
+     			<value>com/rosy/investigate/model/ExamProceeding.hbm.xml</value>
+     			<value>com/rosy/investigate/model/PropertyList.hbm.xml</value>
+     			<value>com/rosy/investigate/model/PropertyKeepList.hbm.xml</value>
+     			<value>com/rosy/investigate/model/EnrolList.hbm.xml</value>
+     			<value>com/rosy/investigate/model/TransmitReturnReceipt.hbm.xml</value>
+     			<value>com/rosy/investigate/model/ReleaseForceWrit.hbm.xml</value>
+     			<value>com/rosy/investigate/model/BusinessLicense.hbm.xml</value>
+     			<value>com/rosy/investigate/model/CheckItem.hbm.xml</value>
+     			<value>com/rosy/investigate/model/OtherCert.hbm.xml</value>     			     			
+     			<value>com/rosy/investigate/model/CheckupReport.hbm.xml</value>
+     			<value>com/rosy/investigate/model/CheckupProxy.hbm.xml</value>     			     			
+     			<value>com/rosy/investigate/model/CheckProxyItem.hbm.xml</value>
+     			<value>com/rosy/punish/model/PunishExamine.hbm.xml</value>
+     			<value>com/rosy/punish/model/VerifyCheckup.hbm.xml</value>
+     			<value>com/rosy/punish/model/DiscussCaseRec.hbm.xml</value>     			
+     			<value>com/rosy/punish/model/HearOfWitnesse.hbm.xml</value>
+     			<value>com/rosy/punish/model/PerformCase.hbm.xml</value>     			
+     			<value>com/rosy/punish/model/PunishDecisionBook.hbm.xml</value>
+				<value>com/rosy/punish/model/PunishDraft.hbm.xml</value>
+     			<value>com/rosy/punish/model/CaseInvestEndReport.hbm.xml</value>
+     			<value>com/rosy/punish/model/AffixToPunish.hbm.xml</value>     			
+     			<value>com/rosy/punish/model/AdminApprize.hbm.xml</value>
+     			<value>com/rosy/punish/model/AmerceReceipt.hbm.xml</value>     			
+     			<value>com/rosy/punish/model/CaseCatalog.hbm.xml</value>   
+     			<value>com/rosy/punish/model/TransferCase.hbm.xml</value>
+     			<value>com/rosy/punish/model/HandoverCase.hbm.xml</value>     			
+     			<value>com/rosy/punish/model/DerateOrPutOff.hbm.xml</value> 
+     			<value>com/rosy/relation/model/UndertakePerson.hbm.xml</value>
+     			<value>com/rosy/relation/model/ReAdminApprizeReceipt.hbm.xml</value>   			
+     			<value>com/rosy/relation/model/ReCaseReportReg.hbm.xml</value>
+     			<value>com/rosy/relation/model/ReCheckupReceipt.hbm.xml</value>     			
+     			<value>com/rosy/relation/model/ReForceWritReceipt.hbm.xml</value>
+				<value>com/rosy/relation/model/ReHandoverReg.hbm.xml</value>
+     			<value>com/rosy/relation/model/ReHearOfReceipt.hbm.xml</value>
+     			<value>com/rosy/relation/model/ReInOrOutPropList.hbm.xml</value>     			
+     			<value>com/rosy/relation/model/ReInspectReg.hbm.xml</value>
+     			<value>com/rosy/relation/model/ReReleaseReceipt.hbm.xml</value>     			
+     			<value>com/rosy/relation/model/ReTransferReg.hbm.xml</value>        
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
+                <prop key="hibernate.query.substitutions">true 'Y', false 'N'</prop>
+               
+                <!-- Create/update the database tables automatically when the JVM starts up
+                <prop key="hibernate.hbm2ddl.auto">update</prop> -->
+                <!-- Turn batching off for better error messages under PostgreSQL 
+                <prop key="hibernate.jdbc.batch_size">0</prop> -->
+            </props>
+        </property>
+    </bean>
+
+    <!-- Transaction manager for a single Hibernate SessionFactory (alternative to JTA) -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- Generic Dao - can be used when doing standard CRUD -->
+    <bean id="dao" class="com.rosy.dao.hibernate.BaseDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- LookupDao: Hibernate implementation -->
+    <bean id="lookupDao" class="com.rosy.dao.hibernate.LookupDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- UserDao: Hibernate implementation -->
+    <bean id="userDao" class="com.rosy.dao.hibernate.UserDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <!-- RoleDao: Hibernate implementation -->
+    <bean id="roleDao" class="com.rosy.dao.hibernate.RoleDaoHibernate">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!--Attachment-START-->
+    <bean id="attachmentDao" class="com.rosy.dao.hibernate.AttachmentDaoHibernate" autowire="byName">
+ 	<property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--Attachment-END-->
+     <!--ApcaOrganization-START-->
+    <bean id="apcaOrganizationDao" class="com.rosy.dao.hibernate.ApcaOrganizationDaoHibernate" autowire="byName"/>
+    <!--ApcaOrganization-END-->
+    
+     <!-- Add new Daos here -->
+
+    <!--PendingRequest-START-->
+    <bean id="pendingRequestDao" class="com.rosy.dao.hibernate.PendingRequestDaoHibernate" autowire="byName"/>
+    <!--PendingRequest-END-->
+    <!--SysLog-START-->
+    <bean id="sysLogDao" class="com.rosy.dao.hibernate.SysLogDaoHibernate" autowire="byName"/>
+    <!--SysLog-END-->
+    <!--PartySpokesman-START-->
+    <bean id="partySpokesmanDao" class="com.rosy.register.dao.hibernate.PartySpokesmanDaoHibernate" autowire="byName"/>
+    <!--PartySpokesman-END-->
+    <!--PartyInfo-START-->
+    <bean id="partyInfoDao" class="com.rosy.register.dao.hibernate.PartyInfoDaoHibernate" autowire="byName"/>
+    <!--PartyInfo-END-->
+    <!--InspectMarket-START-->
+    <bean id="inspectMarketDao" class="com.rosy.register.dao.hibernate.InspectMarketDaoHibernate" autowire="byName"/>
+    <!--InspectMarket-END-->
+    <!--SceneCheck-START-->
+    <bean id="sceneCheckDao" class="com.rosy.register.dao.hibernate.SceneCheckDaoHibernate" autowire="byName"/>
+    <!--SceneCheck-END-->
+    <!--CaseReport-START-->
+    <bean id="caseReportDao" class="com.rosy.register.dao.hibernate.CaseReportDaoHibernate" autowire="byName"/>
+    <!--CaseReport-END-->
+    <!--RegisterApproval-START-->
+    <bean id="registerApprovalDao" class="com.rosy.register.dao.hibernate.RegisterApprovalDaoHibernate" autowire="byName"/>
+    <!--RegisterApproval-END-->
+    <!--ForceWrit-START-->
+    <bean id="forceWritDao" class="com.rosy.investigate.dao.hibernate.ForceWritDaoHibernate" autowire="byName"/>
+    <!--ForceWrit-END-->
+    <!--ExamProceeding-START-->
+    <bean id="examProceedingDao" class="com.rosy.investigate.dao.hibernate.ExamProceedingDaoHibernate" autowire="byName"/>
+    <!--ExamProceeding-END-->
+    <!--PropertyList-START-->
+    <bean id="propertyListDao" class="com.rosy.investigate.dao.hibernate.PropertyListDaoHibernate" autowire="byName"/>
+    <!--PropertyList-END-->
+    <!--PropertyKeepList-START-->
+    <bean id="propertyKeepListDao" class="com.rosy.investigate.dao.hibernate.PropertyKeepListDaoHibernate" autowire="byName"/>
+    <!--PropertyKeepList-END-->
+    <!--EnrolList-START-->
+    <bean id="enrolListDao" class="com.rosy.investigate.dao.hibernate.EnrolListDaoHibernate" autowire="byName"/>
+    <!--EnrolList-END-->
+    <!--TransmitReturnReceipt-START-->
+    <bean id="transmitReturnReceiptDao" class="com.rosy.investigate.dao.hibernate.TransmitReturnReceiptDaoHibernate" autowire="byName"/>
+    <!--TransmitReturnReceipt-END-->
+    <!--ReleaseForceWrit-START-->
+    <bean id="releaseForceWritDao" class="com.rosy.investigate.dao.hibernate.ReleaseForceWritDaoHibernate" autowire="byName"/>
+    <!--ReleaseForceWrit-END-->
+    <!--BusinessLicense-START-->
+    <bean id="businessLicenseDao" class="com.rosy.investigate.dao.hibernate.BusinessLicenseDaoHibernate" autowire="byName"/>
+    <!--BusinessLicense-END-->
+    <!--CheckItem-START-->
+    <bean id="checkItemDao" class="com.rosy.investigate.dao.hibernate.CheckItemDaoHibernate" autowire="byName"/>
+    <!--CheckItem-END-->
+    <!--OtherCert-START-->
+    <bean id="otherCertDao" class="com.rosy.investigate.dao.hibernate.OtherCertDaoHibernate" autowire="byName"/>
+    <!--OtherCert-END-->
+    <!--PunishExamine-START-->
+    <bean id="punishExamineDao" class="com.rosy.punish.dao.hibernate.PunishExamineDaoHibernate" autowire="byName"/>
+    <!--PunishExamine-END-->
+    <!--VerifyCheckup-START-->
+    <bean id="verifyCheckupDao" class="com.rosy.punish.dao.hibernate.VerifyCheckupDaoHibernate" autowire="byName"/>
+    <!--VerifyCheckup-END-->
+    <!--DiscussCaseRec-START-->
+    <bean id="discussCaseRecDao" class="com.rosy.punish.dao.hibernate.DiscussCaseRecDaoHibernate" autowire="byName"/>
+    <!--DiscussCaseRec-END-->
+    <!--HearOfWitnesse-START-->
+    <bean id="hearOfWitnesseDao" class="com.rosy.punish.dao.hibernate.HearOfWitnesseDaoHibernate" autowire="byName"/>
+    <!--HearOfWitnesse-END-->
+    <!--PerformCase-START-->
+    <bean id="performCaseDao" class="com.rosy.punish.dao.hibernate.PerformCaseDaoHibernate" autowire="byName"/>
+    <!--PerformCase-END-->
+    <!--PunishDecisionBook-START-->
+    <bean id="punishDecisionBookDao" class="com.rosy.punish.dao.hibernate.PunishDecisionBookDaoHibernate" autowire="byName"/>
+    <!--PunishDecisionBook-END-->
+    <!--PunishDraft-START-->
+    <bean id="punishDraftDao" class="com.rosy.punish.dao.hibernate.PunishDraftDaoHibernate" autowire="byName"/>
+    <!--PunishDraft-END-->
+    <!--CaseInvestEndReport-START-->
+    <bean id="caseInvestEndReportDao" class="com.rosy.punish.dao.hibernate.CaseInvestEndReportDaoHibernate" autowire="byName"/>
+    <!--CaseInvestEndReport-END-->
+    <!--AffixToPunish-START-->
+    <bean id="affixToPunishDao" class="com.rosy.punish.dao.hibernate.AffixToPunishDaoHibernate" autowire="byName"/>
+    <!--AffixToPunish-END-->
+    <!--AdminApprize-START-->
+    <bean id="adminApprizeDao" class="com.rosy.punish.dao.hibernate.AdminApprizeDaoHibernate" autowire="byName"/>
+    <!--AdminApprize-END-->
+    <!--AmerceReceipt-START-->
+    <bean id="amerceReceiptDao" class="com.rosy.punish.dao.hibernate.AmerceReceiptDaoHibernate" autowire="byName"/>
+    <!--AmerceReceipt-END-->
+    <!--CaseCatalog-START-->
+    <bean id="caseCatalogDao" class="com.rosy.punish.dao.hibernate.CaseCatalogDaoHibernate" autowire="byName"/>
+    <!--CaseCatalog-END-->
+        <!--CheckupReport-START-->
+    <bean id="checkupReportDao" class="com.rosy.investigate.dao.hibernate.CheckupReportDaoHibernate" autowire="byName"/>
+    <!--CheckupReport-END-->
+     <!--CheckupProxy-START-->
+    <bean id="checkupProxyDao" class="com.rosy.investigate.dao.hibernate.CheckupProxyDaoHibernate" autowire="byName"/>
+    <!--CheckupProxy-END-->
+    <!--CheckProxyItem-START-->
+    <bean id="checkProxyItemDao" class="com.rosy.investigate.dao.hibernate.CheckProxyItemDaoHibernate" autowire="byName"/>
+    <!--CheckProxyItem-END-->
+    <!--TransferCase-START-->
+    <bean id="transferCaseDao" class="com.rosy.punish.dao.hibernate.TransferCaseDaoHibernate" autowire="byName"/>
+    <!--TransferCase-END-->
+    <!--HandoverCase-START-->
+    <bean id="handoverCaseDao" class="com.rosy.punish.dao.hibernate.HandoverCaseDaoHibernate" autowire="byName"/>
+    <!--HandoverCase-END-->
+    <!--DerateOrPutOff-START-->
+    <bean id="derateOrPutOffDao" class="com.rosy.punish.dao.hibernate.DerateOrPutOffDaoHibernate" autowire="byName"/>
+    <!--DerateOrPutOff-END-->
+    
+    
+    <!--UndertakePerson-START-->
+    <bean id="undertakePersonDao" class="com.rosy.relation.dao.hibernate.UndertakePersonDaoHibernate" autowire="byName"/>
+    <!--UndertakePerson-END-->
+    <!--ReAdminApprizeReceipt-START-->
+    <bean id="reAdminApprizeReceiptDao" class="com.rosy.relation.dao.hibernate.ReAdminApprizeReceiptDaoHibernate" autowire="byName"/>
+    <!--ReAdminApprizeReceipt-END-->
+    <!--ReCaseReportReg-START-->
+    <bean id="reCaseReportRegDao" class="com.rosy.relation.dao.hibernate.ReCaseReportRegDaoHibernate" autowire="byName"/>
+    <!--ReCaseReportReg-END-->
+    <!--ReCheckupReceipt-START-->
+    <bean id="reCheckupReceiptDao" class="com.rosy.relation.dao.hibernate.ReCheckupReceiptDaoHibernate" autowire="byName"/>
+    <!--ReCheckupReceipt-END-->
+    <!--ReForceWritReceipt-START-->
+    <bean id="reForceWritReceiptDao" class="com.rosy.relation.dao.hibernate.ReForceWritReceiptDaoHibernate" autowire="byName"/>
+    <!--ReForceWritReceipt-END-->
+    <!--ReHandoverReg-START-->
+    <bean id="reHandoverRegDao" class="com.rosy.relation.dao.hibernate.ReHandoverRegDaoHibernate" autowire="byName"/>
+    <!--ReHandoverReg-END-->
+    <!--ReHearOfReceipt-START-->
+    <bean id="reHearOfReceiptDao" class="com.rosy.relation.dao.hibernate.ReHearOfReceiptDaoHibernate" autowire="byName"/>
+    <!--ReHearOfReceipt-END-->
+    <!--ReInOrOutPropList-START-->
+    <bean id="reInOrOutPropListDao" class="com.rosy.relation.dao.hibernate.ReInOrOutPropListDaoHibernate" autowire="byName"/>
+    <!--ReInOrOutPropList-END-->
+    <!--ReInspectReg-START-->
+    <bean id="reInspectRegDao" class="com.rosy.relation.dao.hibernate.ReInspectRegDaoHibernate" autowire="byName"/>
+    <!--ReInspectReg-END-->
+    <!--ReReleaseReceipt-START-->
+    <bean id="reReleaseReceiptDao" class="com.rosy.relation.dao.hibernate.ReReleaseReceiptDaoHibernate" autowire="byName"/>
+    <!--ReReleaseReceipt-END-->
+    <!--ReTransferReg-START-->
+    <bean id="reTransferRegDao" class="com.rosy.relation.dao.hibernate.ReTransferRegDaoHibernate" autowire="byName"/>
+    <!--ReTransferReg-END-->
+</beans>
+

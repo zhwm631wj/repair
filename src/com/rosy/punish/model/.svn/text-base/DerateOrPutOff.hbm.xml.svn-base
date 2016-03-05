@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.punish.model.DerateOrPutOff"
+            table="derateorputoff"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag instead -->
+    <generator class="uuid">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="caseFine"
+                    column="caseFine"
+                length="11"
+        >
+
+        </property>
+
+        <property
+            name="infine"
+                    column="inFine"
+                length="11"
+        >
+
+        </property>
+
+        <property
+            name="notInFine"
+                    column="notInFine"
+                length="11"
+        >
+
+        </property>
+
+        <property
+            name="applyContent"
+                    column="applyContent"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="applyDate"
+                    column="applyDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="applyBook"
+                    column="applyBook"
+                length="255"
+        >
+
+        </property>
+
+        <property
+            name="acceptCheck"
+                    column="acceptCheck"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="checkMan"
+                    column="checkMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="checkDate"
+                    column="checkDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="derateContent"
+                    column="derateContent"
+                length="4000"
+        >
+
+        </property>
+
+        <property
+            name="derateMan"
+                    column="derateMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="derateDate"
+                    column="derateDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="examineNote"
+                    column="examineNote"
+                length="2000"
+        >
+
+        </property>
+
+        <property
+            name="examineMan"
+                    column="examineMan"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="examineDate"
+                    column="examineDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

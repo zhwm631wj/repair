@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/16/trunk/apca/WebRoot/decorators
+END
+investigate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/59/trunk/apca/WebRoot/decorators/investigate.jsp
+END
+rescind.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/59/trunk/apca/WebRoot/decorators/rescind.jsp
+END
+main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/59/trunk/apca/WebRoot/decorators/main.jsp
+END
+flow.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/57/trunk/apca/WebRoot/decorators/flow.jsp
+END
+empty.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/27/trunk/apca/WebRoot/decorators/empty.jsp
+END
+coercive.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/59/trunk/apca/WebRoot/decorators/coercive.jsp
+END
+default.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/59/trunk/apca/WebRoot/decorators/default.jsp
+END

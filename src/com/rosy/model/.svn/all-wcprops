@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/model
+END
+Role.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/model/Role.hbm.xml
+END
+LabelValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/model/LabelValue.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/model/Address.java
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/User.hbm.xml
+END
+ApcaOrganization.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/ApcaOrganization.java
+END
+PendingRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/PendingRequest.java
+END
+SysLog.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/SysLog.hbm.xml
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/User.java
+END
+SysLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/SysLog.java
+END
+ApcaOrganization.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/ApcaOrganization.hbm.xml
+END
+Attachment.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/model/Attachment.hbm.xml
+END
+Attachment.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/model/Attachment.java
+END
+BaseObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/model/BaseObject.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/model/Role.java
+END
+PendingRequest.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/model/PendingRequest.hbm.xml
+END

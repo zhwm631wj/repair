@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- ========== Data Sources Definitions =================================== -->
+	<!--
+		Define your Struts data sources in a file called struts-data-sources.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans>
+		<form-bean name="partyInfoForm"
+			type="com.rosy.register.webapp.form.PartyInfoForm" />
+		<form-bean name="partyInfoForm"
+			type="com.rosy.register.webapp.form.PartyInfoForm" />
+		<form-bean name="inspectMarketForm"
+			type="com.rosy.register.webapp.form.InspectMarketForm" />
+		<form-bean name="partySpokesmanForm"
+			type="com.rosy.register.webapp.form.PartySpokesmanForm" />
+		<form-bean name="sceneCheckForm"
+			type="com.rosy.register.webapp.form.SceneCheckForm" />
+		<form-bean name="caseReportForm"
+			type="com.rosy.register.webapp.form.CaseReportForm" />
+		<form-bean name="registerApprovalForm"
+			type="com.rosy.register.webapp.form.RegisterApprovalForm" />
+		<form-bean name="transferCaseForm"
+			type="com.rosy.punish.webapp.form.TransferCaseForm" />
+		<form-bean name="handoverCaseForm"
+			type="com.rosy.punish.webapp.form.HandoverCaseForm" />
+	</form-beans>
+
+	<!-- ========== Action Mapping Definitions =================================== -->
+	<action-mappings>
+		<action path="/caseReports"
+			type="com.rosy.register.webapp.action.CaseReportAction"
+			name="caseReportForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/caseReportForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/caseReportList.jsp" redirect="false" />
+			<forward name="search" path="/caseReports.html"
+				redirect="true" />
+		</action>
+		<action path="/editCaseReport"
+			type="com.rosy.register.webapp.action.CaseReportAction"
+			name="caseReportForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/caseReportForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/caseReportList.jsp" redirect="false" />
+			<forward name="search" path="/caseReports.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCaseReport"
+			type="com.rosy.register.webapp.action.CaseReportAction"
+			name="caseReportForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/caseReportForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/caseReportList.jsp" redirect="false" />
+			<forward name="next" redirect="true" path="/editSceneCheck.html"></forward>
+			<forward name="search" path="/caseReports.html"
+				redirect="true" />
+		</action>
+		<action path="/sceneChecks"
+			type="com.rosy.register.webapp.action.SceneCheckAction"
+			name="sceneCheckForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/sceneCheckForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/sceneCheckList.jsp" redirect="false" />
+			<forward name="search" path="/sceneChecks.html"
+				redirect="true" />
+		</action>
+		<action path="/editSceneCheck"
+			type="com.rosy.register.webapp.action.SceneCheckAction"
+			name="sceneCheckForm" scope="request" input="list" parameter="method"
+			unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/sceneCheckForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/sceneCheckList.jsp" redirect="false" />
+			<forward name="search" path="/sceneChecks.html"
+				redirect="true" />
+		</action>
+		<action path="/saveSceneCheck"
+			type="com.rosy.register.webapp.action.SceneCheckAction"
+			name="sceneCheckForm" scope="request" input="edit" parameter="method"
+			unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/sceneCheckForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/sceneCheckList.jsp" redirect="false" />
+			<forward name="search" path="/sceneChecks.html"
+				redirect="true" />
+		</action>
+		<action path="/inspectMarkets"
+			type="com.rosy.register.webapp.action.InspectMarketAction"
+			name="inspectMarketForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/inspectMarketForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/inspectMarketList.jsp"
+				redirect="false" />
+			<forward name="search" path="/inspectMarkets.html"
+				redirect="true" />
+		</action>
+		<action path="/editInspectMarket"
+			type="com.rosy.register.webapp.action.InspectMarketAction"
+			name="inspectMarketForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/inspectMarketForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/inspectMarketList.jsp"
+				redirect="false" />
+			<forward name="search" path="/inspectMarkets.html"
+				redirect="true" />
+		</action>
+		<action path="/saveInspectMarket"
+			type="com.rosy.register.webapp.action.InspectMarketAction"
+			name="inspectMarketForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/inspectMarketForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/inspectMarketList.jsp"
+				redirect="false" />
+			<forward name="search" path="/inspectMarkets.html"
+				redirect="true" />
+		</action>
+		
+		
+		<action path="/handoverCases"
+			type="com.rosy.punish.webapp.action.HandoverCaseAction"
+			name="handoverCaseForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/handoverCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/handoverCaseList.jsp" redirect="false" />
+			<forward name="search" path="/handoverCases.html"
+				redirect="true" />
+		</action>
+		<action path="/editHandoverCase"
+			type="com.rosy.punish.webapp.action.HandoverCaseAction"
+			name="handoverCaseForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/handoverCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/handoverCaseList.jsp" redirect="false" />
+			<forward name="search" path="/handoverCases.html"
+				redirect="true" />
+		</action>
+		<action path="/saveHandoverCase"
+			type="com.rosy.punish.webapp.action.HandoverCaseAction"
+			name="handoverCaseForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/handoverCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/handoverCaseList.jsp" redirect="false" />
+			<forward name="search" path="/handoverCases.html"
+				redirect="true" />
+		</action>
+
+		<action path="/transferCases"
+			type="com.rosy.punish.webapp.action.TransferCaseAction"
+			name="transferCaseForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/transferCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/transferCaseList.jsp" redirect="false" />
+			<forward name="search" path="/transferCases.html"
+				redirect="true" />
+		</action>
+		<action path="/editTransferCase"
+			type="com.rosy.punish.webapp.action.TransferCaseAction"
+			name="transferCaseForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/transferCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/transferCaseList.jsp" redirect="false" />
+			<forward name="search" path="/transferCases.html"
+				redirect="true" />
+		</action>
+		<action path="/saveTransferCase"
+			type="com.rosy.punish.webapp.action.TransferCaseAction"
+			name="transferCaseForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/transferCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/transferCaseList.jsp" redirect="false" />
+			<forward name="search" path="/transferCases.html"
+				redirect="true" />
+		</action>
+		
+		<action path="/registerApprovals"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+			<forward name="search" path="/registerApprovals.html"
+				redirect="true" />
+		</action>
+		<action path="/editRegisterApproval"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+			<forward name="search" path="/registerApprovals.html"
+				redirect="true" />
+		</action>
+		<action path="/saveRegisterApproval"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+			<forward name="search" path="/registerApprovals.html"
+				redirect="true" />
+		</action>
+		<!-- 立案 开始 填写基本信息 -->
+		<action path="/editRegisterApprovalStep1"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep1.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+			<forward name="search" path="/registerApprovals.html"
+				redirect="true" />
+		</action>
+			<action path="/saveRegisterApprovalStep1"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep1.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+			<forward name="search" path="/registerApprovals.html"
+				redirect="true" />
+					<!-- 举报 -->
+			<forward name="step21" path="/editCaseReport.html"
+				redirect="true" />
+				<!-- 市场巡查 -->
+			<forward name="step22" path="/editInspectMarket.html"
+				redirect="true" />
+				<!-- 批转案件 -->
+			<forward name="step23" path="/editTransferCase.html"
+				redirect="true" />
+				<!-- 移交案件 -->
+		   	<forward name="step24" path="/editHandoverCase.html"
+				redirect="true" />
+		</action>
+		
+			<!-- 立案 审核资料 提案立案 -->
+		<action path="/editRegisterApprovalStep2"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep2.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRegisterApprovalStep2"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep2.jsp"
+				redirect="false" />
+			<!-- 所长批示-->
+			<forward name="next" path="/editRegisterApprovalStep3.html"
+				redirect="true" />
+		</action>
+		
+			<!-- 立案 所长批示 -->
+		<action path="/editRegisterApprovalStep3"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep2.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRegisterApprovalStep3"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep3.jsp"
+				redirect="false" />
+			<!--  法规股立案-->
+			<forward name="next" path="/editRegisterApprovalStep4.html"
+				redirect="true" />
+		</action>
+
+			<!-- 立案 法规股立案 -->
+		<action path="/editRegisterApprovalStep4"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep4.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRegisterApprovalStep4"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep4.jsp"
+				redirect="false" />
+			<!-- 局长批示-->
+			<forward name="next" path="/editRegisterApprovalStep5.html"
+				redirect="true" />
+		</action>
+		
+			<!-- 立案 局长批示 -->
+		<action path="/editRegisterApprovalStep5"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep5.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveRegisterApprovalStep5"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/register/registerApprovalStep5.jsp"
+				redirect="false" />
+			<!-- 所长批示-->
+			<forward name="next" path="/editRegisterApprovalStep5.html"
+				redirect="true" />
+		</action>
+		
+		<!-- 办案区 -->
+	  <action path="/cs/index"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 立销案 -->
+	   <action path="/cs/case/index"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		  <!-- 立案 -->		
+		<action path="/cs/case/registerCases"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 销案 -->						
+		<action path="/cs/case/registerCloses"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 强制措施 -->				
+	     	<action path="/cs/force/index"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>	
+		<!-- 强制措施 -->				
+	     	<action path="/cs/force/forces"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 解除强制措施 -->				
+	     	<action path="/cs/force/deforces"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 先行登记保存 -->				
+	     	<action path="/cs/force/books"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+			<!-- 调查取证 -->				
+	     	<action path="/cs/in/index"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+			<!-- 调查取证-当事人身份 -->				
+	     	<action path="/cs/in/partys"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!--  调查取证-取   证 -->				
+	     	<action path="/cs/in/witness"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+		<!-- 调查取证-调查终结 -->				
+	     	<action path="/cs/in/ends"
+			type="com.rosy.register.webapp.action.RegisterApprovalAction"
+			name="registerApprovalForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="list"
+				path="/WEB-INF/pages/register/registerApprovalList.jsp"
+				redirect="false" />
+		</action>
+	</action-mappings>
+
+
+</struts-config>

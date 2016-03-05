@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate
+END
+TransmitReturnReceiptDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/TransmitReturnReceiptDaoHibernate.java
+END
+OtherCertDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/OtherCertDaoHibernate.java
+END
+ForceWritDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/ForceWritDaoHibernate.java
+END
+EnrolListDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/EnrolListDaoHibernate.java
+END
+CheckProxyItemDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/dao/hibernate/CheckProxyItemDaoHibernate.java
+END
+BusinessLicenseDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/BusinessLicenseDaoHibernate.java
+END
+ExamProceedingDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/ExamProceedingDaoHibernate.java
+END
+CheckItemDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/CheckItemDaoHibernate.java
+END
+PropertyKeepListDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/PropertyKeepListDaoHibernate.java
+END
+ReleaseForceWritDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/ReleaseForceWritDaoHibernate.java
+END
+CheckupReportDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/CheckupReportDaoHibernate.java
+END
+CheckupProxyDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/dao/hibernate/CheckupProxyDaoHibernate.java
+END
+PropertyListDaoHibernate.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/dao/hibernate/PropertyListDaoHibernate.java
+END

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.rosy.register.model.RegisterApproval"
+		table="registerapproval">
+
+		<id name="id" column="ID" type="java.lang.String">
+
+			<!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof-->
+			<generator class="uuid.hex">
+
+			</generator>
+
+		</id>
+
+		<property name="caseName" column="caseName" length="100">
+
+		</property>
+
+		<property name="caseWhere" column="caseWhere" length="100">
+
+		</property>
+
+		<property name="caseFrom" column="caseFrom" length="20">
+
+		</property>
+
+		<property name="caseAndGist" column="caseAndGist"
+			length="2000">
+
+		</property>
+
+		<property name="undertakeDate" column="undertakeDate"
+			length="19">
+
+		</property>
+
+		<property name="undertakeIdea" column="undertakeIdea"
+			length="100">
+
+		</property>
+
+		<property name="undertakeOrg" column="UndertakeOrg"
+			length="50">
+
+		</property>
+
+		<property name="superintendent" column="superintendent"
+			length="30">
+
+		</property>
+
+		<property name="ssignDate" column="sSignDate" length="19">
+
+		</property>
+
+		<property name="regOrgIdea" column="regOrgIdea" length="100">
+
+		</property>
+
+		<property name="regOrg" column="regOrg" length="50">
+
+		</property>
+
+		<property name="regOrgMan" column="regOrgMan" length="30">
+
+		</property>
+
+		<property name="regDate" column="regDate" length="19">
+
+		</property>
+
+		<property name="ministerIdea" column="ministerIdea"
+			length="100">
+
+		</property>
+
+		<property name="minister" column="minister" length="30">
+
+		</property>
+
+		<property name="miniOrg" column="miniOrg" length="50">
+
+		</property>
+
+		<property name="checkDate" column="checkDate" length="19">
+
+		</property>
+
+		<property name="remark" column="remark" length="200">
+
+		</property>
+
+		<property name="rflag" column="rFlag" length="1">
+
+		</property>
+
+		<property name="createDate" column="createDate" length="19">
+
+		</property>
+
+	</class>
+
+</hibernate-mapping>
+

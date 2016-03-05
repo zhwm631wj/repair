@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service
+END
+CheckItemManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/CheckItemManager.java
+END
+OtherCertManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/OtherCertManager.java
+END
+ReleaseForceWritManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/ReleaseForceWritManager.java
+END
+BusinessLicenseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/BusinessLicenseManager.java
+END
+CheckupProxyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/service/CheckupProxyManager.java
+END
+PropertyListManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/PropertyListManager.java
+END
+PropertyKeepListManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/PropertyKeepListManager.java
+END
+EnrolListManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/EnrolListManager.java
+END
+CheckProxyItemManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/service/CheckProxyItemManager.java
+END
+CheckupReportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/CheckupReportManager.java
+END
+TransmitReturnReceiptManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/TransmitReturnReceiptManager.java
+END
+ExamProceedingManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/ExamProceedingManager.java
+END
+ForceWritManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/ForceWritManager.java
+END

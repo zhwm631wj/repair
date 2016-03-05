@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register
+END
+registerApprovalList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalList.jsp
+END
+handoverCaseList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/handoverCaseList.jsp
+END
+inspectMarketList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/inspectMarketList.jsp
+END
+caseReportList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/caseReportList.jsp
+END
+transferCaseList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/transferCaseList.jsp
+END
+partyInfoForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/partyInfoForm.jsp
+END
+registerApprovalStep2.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalStep2.jsp
+END
+registerApprovalStep3.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalStep3.jsp
+END
+partyInfoList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/partyInfoList.jsp
+END
+sceneCheckList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/sceneCheckList.jsp
+END
+partytabs.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/partytabs.jsp
+END
+registerApprovalStep1.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalStep1.jsp
+END
+partySpokesmanForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/partySpokesmanForm.jsp
+END
+registerApprovalForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalForm.jsp
+END
+caseReportForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/caseReportForm.jsp
+END
+registerApprovalStep5.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalStep5.jsp
+END
+registerApprovalStep4.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/registerApprovalStep4.jsp
+END
+inspectMarketForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/inspectMarketForm.jsp
+END
+handoverCaseForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/handoverCaseForm.jsp
+END
+partySpokesmanList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/38/trunk/apca/WebRoot/WEB-INF/pages/register/partySpokesmanList.jsp
+END
+sceneCheckForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/sceneCheckForm.jsp
+END
+transferCaseForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/register/transferCaseForm.jsp
+END

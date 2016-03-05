@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model
+END
+EnrolList.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/EnrolList.hbm.xml
+END
+CheckItem.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckItem.hbm.xml
+END
+TransmitReturnReceipt.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/TransmitReturnReceipt.java
+END
+CheckupReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/CheckupReport.java
+END
+CheckProxyItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckProxyItem.java
+END
+ExamProceeding.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/ExamProceeding.java
+END
+PropertyList.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/PropertyList.java
+END
+OtherCert.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/OtherCert.hbm.xml
+END
+PropertyKeepList.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/PropertyKeepList.java
+END
+ReleaseForceWrit.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/ReleaseForceWrit.hbm.xml
+END
+ForceWrit.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/ForceWrit.hbm.xml
+END
+TransmitReturnReceipt.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/TransmitReturnReceipt.hbm.xml
+END
+CheckupProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckupProxy.java
+END
+ReleaseForceWrit.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/ReleaseForceWrit.java
+END
+EnrolList.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/EnrolList.java
+END
+PropertyList.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/PropertyList.hbm.xml
+END
+CheckProxyItem.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckProxyItem.hbm.xml
+END
+CheckupProxy.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckupProxy.hbm.xml
+END
+ForceWrit.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/ForceWrit.java
+END
+PropertyKeepList.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/PropertyKeepList.hbm.xml
+END
+BusinessLicense.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/BusinessLicense.java
+END
+OtherCert.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/model/OtherCert.java
+END
+CheckItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckItem.java
+END
+BusinessLicense.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/BusinessLicense.hbm.xml
+END
+CheckupReport.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/CheckupReport.hbm.xml
+END
+ExamProceeding.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/model/ExamProceeding.hbm.xml
+END

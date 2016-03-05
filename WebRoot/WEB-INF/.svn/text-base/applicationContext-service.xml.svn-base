@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+    <aop:config>
+        <aop:advisor id="userManagerTx" advice-ref="userManagerTxAdvice" pointcut="execution(* *..service.UserManager.*(..))" order="0"/>        
+        <aop:advisor id="userManagerSecurity" advice-ref="userSecurityAdvice" pointcut="execution(* *..service.UserManager.saveUser(..))" order="1"/>
+        <aop:advisor id="managerTx" advice-ref="txAdvice" pointcut="execution(* *..service.*Manager.*(..))" order="2"/>
+    </aop:config>
+    
+    <tx:advice id="txAdvice">
+        <tx:attributes>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <tx:advice id="userManagerTxAdvice">
+        <tx:attributes>
+            <tx:method name="save*" rollback-for="UserExistsException"/>
+        </tx:attributes>
+    </tx:advice>
+    
+    <bean id="lookupManager" class="com.rosy.service.impl.LookupManagerImpl">
+        <property name="lookupDao" ref="lookupDao"/>
+    </bean>
+
+    <bean id="manager" class="com.rosy.service.impl.BaseManager">
+        <property name="dao" ref="dao"/>
+    </bean>
+
+    <bean id="userManager" class="com.rosy.service.impl.UserManagerImpl">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+
+    <bean id="userSecurityAdvice" class="com.rosy.service.UserSecurityAdvice">
+        <property name="userCache" ref="userCache"/>
+    </bean>
+
+    <bean id="userCache" class="org.acegisecurity.providers.dao.cache.EhCacheBasedUserCache">
+        <property name="cache">
+            <bean class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+                <property name="cacheManager">
+                    <bean class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"/>
+                </property>
+                <property name="cacheName" value="userCache"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="roleManager" class="com.rosy.service.impl.RoleManagerImpl">
+        <property name="roleDao" ref="roleDao"/>
+    </bean>
+
+    <bean id="mailEngine" class="com.rosy.service.MailEngine">
+        <property name="mailSender" ref="mailSender"/>
+        <property name="velocityEngine" ref="velocityEngine"/>
+    </bean>
+
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mail.host}"/>
+        <property name="username" value="${mail.username}"/>
+        <property name="password" value="${mail.password}"/>
+    </bean>
+
+    <!-- Configure Velocity for sending e-mail -->
+    <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <props>
+                <prop key="resource.loader">class</prop>
+                <prop key="class.resource.loader.class">
+                    org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+                </prop>
+                <prop key="velocimacro.library"></prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="mailMessage" class="org.springframework.mail.SimpleMailMessage" scope="prototype">
+        <property name="from" value="${mail.default.from}"/>
+    </bean>
+
+       <!--Attachment-START-->    
+    <bean id="attachmentManager" class="com.rosy.service.impl.AttachmentManagerImpl">
+        <property name="attachmentDao" ref="attachmentDao"/>
+    </bean>
+    <!--Attachment-END-->
+        <!--ApcaOrganization-START-->    
+    <bean id="apcaOrganizationManager" class="com.rosy.service.impl.ApcaOrganizationManagerImpl">
+        <property name="apcaOrganizationDao" ref="apcaOrganizationDao"/>
+    </bean>
+    <!--ApcaOrganization-END-->
+    
+     <!-- Add new Managers here -->
+    <!--PendingRequest-START-->    
+    <bean id="pendingRequestManager" class="com.rosy.service.impl.PendingRequestManagerImpl">
+        <property name="pendingRequestDao" ref="pendingRequestDao"/>
+    </bean>
+    <!--PendingRequest-END-->
+    <!--SysLog-START-->    
+    <bean id="sysLogManager" class="com.rosy.service.impl.SysLogManagerImpl">
+        <property name="sysLogDao" ref="sysLogDao"/>
+    </bean>
+    <!--SysLog-END-->
+    <!--PartySpokesman-START-->    
+    <bean id="partySpokesmanManager" class="com.rosy.register.service.impl.PartySpokesmanManagerImpl">
+        <property name="partySpokesmanDao" ref="partySpokesmanDao"/>
+    </bean>
+    <!--PartySpokesman-END-->
+    <!--PartyInfo-START-->    
+    <bean id="partyInfoManager" class="com.rosy.register.service.impl.PartyInfoManagerImpl">
+        <property name="partyInfoDao" ref="partyInfoDao"/>
+    </bean>
+    <!--PartyInfo-END-->
+    <!--InspectMarket-START-->    
+    <bean id="inspectMarketManager" class="com.rosy.register.service.impl.InspectMarketManagerImpl">
+        <property name="inspectMarketDao" ref="inspectMarketDao"/>
+    </bean>
+    <!--InspectMarket-END-->
+    <!--SceneCheck-START-->    
+    <bean id="sceneCheckManager" class="com.rosy.register.service.impl.SceneCheckManagerImpl">
+        <property name="sceneCheckDao" ref="sceneCheckDao"/>
+    </bean>
+    <!--SceneCheck-END-->
+    <!--CaseReport-START-->    
+    <bean id="caseReportManager" class="com.rosy.register.service.impl.CaseReportManagerImpl">
+        <property name="caseReportDao" ref="caseReportDao"/>
+    </bean>
+    <!--CaseReport-END-->
+    <!--RegisterApproval-START-->    
+    <bean id="registerApprovalManager" class="com.rosy.register.service.impl.RegisterApprovalManagerImpl">
+        <property name="registerApprovalDao" ref="registerApprovalDao"/>
+    </bean>
+    <!--RegisterApproval-END-->
+    <!--ForceWrit-START-->    
+    <bean id="forceWritManager" class="com.rosy.investigate.service.impl.ForceWritManagerImpl">
+        <property name="forceWritDao" ref="forceWritDao"/>
+    </bean>
+    <!--ForceWrit-END-->
+    <!--ExamProceeding-START-->    
+    <bean id="examProceedingManager" class="com.rosy.investigate.service.impl.ExamProceedingManagerImpl">
+        <property name="examProceedingDao" ref="examProceedingDao"/>
+    </bean>
+    <!--ExamProceeding-END-->
+    <!--PropertyList-START-->    
+    <bean id="propertyListManager" class="com.rosy.investigate.service.impl.PropertyListManagerImpl">
+        <property name="propertyListDao" ref="propertyListDao"/>
+    </bean>
+    <!--PropertyList-END-->
+    <!--PropertyKeepList-START-->    
+    <bean id="propertyKeepListManager" class="com.rosy.investigate.service.impl.PropertyKeepListManagerImpl">
+        <property name="propertyKeepListDao" ref="propertyKeepListDao"/>
+    </bean>
+    <!--PropertyKeepList-END-->
+    <!--EnrolList-START-->    
+    <bean id="enrolListManager" class="com.rosy.investigate.service.impl.EnrolListManagerImpl">
+        <property name="enrolListDao" ref="enrolListDao"/>
+    </bean>
+    <!--EnrolList-END-->
+    <!--TransmitReturnReceipt-START-->    
+    <bean id="transmitReturnReceiptManager" class="com.rosy.investigate.service.impl.TransmitReturnReceiptManagerImpl">
+        <property name="transmitReturnReceiptDao" ref="transmitReturnReceiptDao"/>
+    </bean>
+    <!--TransmitReturnReceipt-END-->
+    <!--ReleaseForceWrit-START-->    
+    <bean id="releaseForceWritManager" class="com.rosy.investigate.service.impl.ReleaseForceWritManagerImpl">
+        <property name="releaseForceWritDao" ref="releaseForceWritDao"/>
+    </bean>
+    <!--ReleaseForceWrit-END-->
+    <!--BusinessLicense-START-->    
+    <bean id="businessLicenseManager" class="com.rosy.investigate.service.impl.BusinessLicenseManagerImpl">
+        <property name="businessLicenseDao" ref="businessLicenseDao"/>
+    </bean>
+    <!--BusinessLicense-END-->
+    <!--CheckItem-START-->    
+    <bean id="checkItemManager" class="com.rosy.investigate.service.impl.CheckItemManagerImpl">
+        <property name="checkItemDao" ref="checkItemDao"/>
+    </bean>
+    <!--CheckItem-END-->
+    <!--OtherCert-START-->    
+    <bean id="otherCertManager" class="com.rosy.investigate.service.impl.OtherCertManagerImpl">
+        <property name="otherCertDao" ref="otherCertDao"/>
+    </bean>
+    <!--OtherCert-END-->
+    <!--PunishExamine-START-->    
+    <bean id="punishExamineManager" class="com.rosy.punish.service.impl.PunishExamineManagerImpl">
+        <property name="punishExamineDao" ref="punishExamineDao"/>
+    </bean>
+    <!--PunishExamine-END-->
+    <!--VerifyCheckup-START-->    
+    <bean id="verifyCheckupManager" class="com.rosy.punish.service.impl.VerifyCheckupManagerImpl">
+        <property name="verifyCheckupDao" ref="verifyCheckupDao"/>
+    </bean>
+    <!--VerifyCheckup-END-->
+    <!--DiscussCaseRec-START-->    
+    <bean id="discussCaseRecManager" class="com.rosy.punish.service.impl.DiscussCaseRecManagerImpl">
+        <property name="discussCaseRecDao" ref="discussCaseRecDao"/>
+    </bean>
+    <!--DiscussCaseRec-END-->
+    <!--HearOfWitnesse-START-->    
+    <bean id="hearOfWitnesseManager" class="com.rosy.punish.service.impl.HearOfWitnesseManagerImpl">
+        <property name="hearOfWitnesseDao" ref="hearOfWitnesseDao"/>
+    </bean>
+    <!--HearOfWitnesse-END-->
+    <!--PerformCase-START-->    
+    <bean id="performCaseManager" class="com.rosy.punish.service.impl.PerformCaseManagerImpl">
+        <property name="performCaseDao" ref="performCaseDao"/>
+    </bean>
+    <!--PerformCase-END-->
+    <!--PunishDecisionBook-START-->    
+    <bean id="punishDecisionBookManager" class="com.rosy.punish.service.impl.PunishDecisionBookManagerImpl">
+        <property name="punishDecisionBookDao" ref="punishDecisionBookDao"/>
+    </bean>
+    <!--PunishDecisionBook-END-->
+    <!--PunishDraft-START-->    
+    <bean id="punishDraftManager" class="com.rosy.punish.service.impl.PunishDraftManagerImpl">
+        <property name="punishDraftDao" ref="punishDraftDao"/>
+    </bean>
+    <!--PunishDraft-END-->
+    <!--CaseInvestEndReport-START-->    
+    <bean id="caseInvestEndReportManager" class="com.rosy.punish.service.impl.CaseInvestEndReportManagerImpl">
+        <property name="caseInvestEndReportDao" ref="caseInvestEndReportDao"/>
+    </bean>
+    <!--CaseInvestEndReport-END-->
+    <!--AffixToPunish-START-->    
+    <bean id="affixToPunishManager" class="com.rosy.punish.service.impl.AffixToPunishManagerImpl">
+        <property name="affixToPunishDao" ref="affixToPunishDao"/>
+    </bean>
+    <!--AffixToPunish-END-->
+    <!--AdminApprize-START-->    
+    <bean id="adminApprizeManager" class="com.rosy.punish.service.impl.AdminApprizeManagerImpl">
+        <property name="adminApprizeDao" ref="adminApprizeDao"/>
+    </bean>
+    <!--AdminApprize-END-->
+    <!--AmerceReceipt-START-->    
+    <bean id="amerceReceiptManager" class="com.rosy.punish.service.impl.AmerceReceiptManagerImpl">
+        <property name="amerceReceiptDao" ref="amerceReceiptDao"/>
+    </bean>
+    <!--AmerceReceipt-END-->
+    <!--CaseCatalog-START-->    
+    <bean id="caseCatalogManager" class="com.rosy.punish.service.impl.CaseCatalogManagerImpl">
+        <property name="caseCatalogDao" ref="caseCatalogDao"/>
+    </bean>
+    <!--CaseCatalog-END-->
+    
+        <!--CheckupReport-START-->    
+    <bean id="checkupReportManager" class="com.rosy.investigate.service.impl.CheckupReportManagerImpl">
+        <property name="checkupReportDao" ref="checkupReportDao"/>
+    </bean>
+    <!--CheckupReport-END-->
+    
+     <!--CheckupProxy-START-->    
+    <bean id="checkupProxyManager" class="com.rosy.investigate.service.impl.CheckupProxyManagerImpl">
+        <property name="checkupProxyDao" ref="checkupProxyDao"/>
+    </bean>
+    <!--CheckupProxy-END-->
+    <!--CheckProxyItem-START-->    
+    <bean id="checkProxyItemManager" class="com.rosy.investigate.service.impl.CheckProxyItemManagerImpl">
+        <property name="checkProxyItemDao" ref="checkProxyItemDao"/>
+    </bean>
+    <!--CheckProxyItem-END-->
+    <!--TransferCase-START-->    
+    <bean id="transferCaseManager" class="com.rosy.punish.service.impl.TransferCaseManagerImpl">
+        <property name="transferCaseDao" ref="transferCaseDao"/>
+    </bean>
+    <!--TransferCase-END-->
+    <!--HandoverCase-START-->    
+    <bean id="handoverCaseManager" class="com.rosy.punish.service.impl.HandoverCaseManagerImpl">
+        <property name="handoverCaseDao" ref="handoverCaseDao"/>
+    </bean>
+    <!--HandoverCase-END-->
+    <!--DerateOrPutOff-START-->    
+    <bean id="derateOrPutOffManager" class="com.rosy.punish.service.impl.DerateOrPutOffManagerImpl">
+        <property name="derateOrPutOffDao" ref="derateOrPutOffDao"/>
+    </bean>
+    <!--DerateOrPutOff-END-->
+</beans>
+

@@ -1,0 +1,131 @@
+8
+
+dir
+16
+https://apca.googlecode.com/svn/trunk/apca/WebRoot/styles
+https://apca.googlecode.com/svn
+
+
+
+2008-10-20T05:02:43.300509Z
+16
+zhwm631wj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+295a6d74-9d32-11dd-9476-71c886a649bc
+
+andreas01
+dir
+
+displaytag.css
+file
+
+
+
+
+2008-10-19T14:40:34.000000Z
+c8f17ae0ea458f831291e4cb96225e84
+2008-10-20T05:02:43.300509Z
+16
+zhwm631wj
+has-props
+
+flora
+dir
+
+flow.css
+file
+57
+
+
+
+2008-11-08T15:37:49.596000Z
+b228ea2a2b72e8a06539f1f3e3a4c2fa
+2008-11-10T14:30:20.957186Z
+57
+zhwm631wj
+has-props
+
+forms.css
+file
+59
+
+
+
+2008-11-15T16:42:17.317000Z
+8dbd28f63aa4089bf51b71f8de6b31ea
+2008-11-16T09:56:22.079774Z
+59
+zhwm631wj
+has-props
+
+ie6.css
+file
+57
+
+
+
+2008-11-08T12:23:06.460000Z
+3fa40ff4b28fbf4530930434289e8ecf
+2008-11-10T14:30:20.957186Z
+57
+zhwm631wj
+has-props
+
+listinfo.css
+file
+29
+
+
+
+2008-10-27T09:56:27.681000Z
+4809beed105d2bdd1c7aefe90283ea78
+2008-10-28T14:57:46.341941Z
+29
+zhwm631wj
+has-props
+
+messages.css
+file
+
+
+
+
+2008-10-19T14:40:34.000000Z
+25f416395a09b021e482e35bd6e75681
+2008-10-20T05:02:43.300509Z
+16
+zhwm631wj
+has-props
+
+puzzlewithstyle
+dir
+
+simplicity
+dir
+
+typo.css
+file
+59
+
+
+
+2008-10-19T14:40:34.000000Z
+a4fd8bb55a6b21b7afb4e1ea4d99eb6a
+2008-11-16T09:56:22.079774Z
+59
+zhwm631wj
+has-props
+

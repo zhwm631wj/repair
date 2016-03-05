@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuConfig>
+    <Displayers>
+        <Displayer name="Velocity" type="net.sf.navigator.displayer.VelocityMenuDisplayer"/>
+    </Displayers>
+    <Menus>
+        <Menu name="MainMenu" title="mainMenu.title" page="/mainMenu.html"/>
+        <Menu name="FileUpload" title="menu.selectFile" description="File Upload" width="100" forward="selectFile" roles="admin,user"/>
+        <Menu name="UserMenu" title="menu.admin" description="User Menu" roles="admin,user" width="120" forward="editProfile">
+	        <Item name="UserInfoMenu" title="menu.user" description="User Menu" forward="editProfile" roles="admin,user"/>
+	        <Item name="UserPasswordMenu" title="menu.user.password" description="User Menu" page="/saveUser.html?method=toEditPass" roles="admin,user"/>
+	            <Item name="SystemMenu" title="systemMenu.info" roles="admin" width="120" action="activeUsers"> 
+	            <Item name="ActiveUsers" title="mainMenu.activeUsers"  action="activeUsers"/>
+	            <Item name="ReloadContext" title="menu.admin.reload" page="/reload.html"/>
+	            <Item name="FlushCache" title="menu.flushCache" page="/flush.html"/>
+	            <Item name="SysLogMenu" title="sysLogList.title" page="/sysLogs.html"/>
+	            <Item name="Clickstream" title="menu.clickstream" roles="admin" page="/clickstreams.jsp"/>
+	            </Item >
+	        <Item name="ViewUsers" title="menu.admin.users" forward="viewUsers" roles="admin"/>
+	        <Item name="ApcaOrganizationMenu" title="menu.apcaOrganization" roles="admin" page="/apcaOrganizations.html"/>
+        </Menu>
+        <Menu name="Logout" title="user.logout" page="/logout.jsp" roles="admin,user"/>
+        <Menu name="PendingRequestMenu" title="pendingRequestList.title" page="/pendingRequests.html"/>
+        <Menu name="RegisterMenu" title="partySpokesmanList.title" page="/partySpokesmans.html">
+	        <Item name="PartySpokesmanMenu" title="partySpokesmanList.title" page="/partySpokesmans.html"/>
+	        <Item name="PartyInfoMenu" title="partyInfoList.title" page="/partyInfos.html"/>
+	        <Item name="InspectMarketMenu" title="inspectMarketList.title" page="/inspectMarkets.html"/>
+	        <Item name="SceneCheckMenu" title="sceneCheckList.title" page="/sceneChecks.html"/>
+	        <Item name="CaseReportMenu" title="caseReportList.title" page="/caseReports.html"/>
+	        <Item name="RegisterApprovalMenu" title="registerApprovalList.title" page="/registerApprovals.html"/>
+        </Menu>
+        <Menu name="InvestigateMenu" title="forceWritList.title" page="/forceWrits.html">
+	        <Item name="ForceWritMenu" title="forceWritList.title" page="/forceWrits.html"/>
+	        <Item name="ExamProceedingMenu" title="examProceedingList.title" page="/examProceedings.html"/>
+	        <Item name="PropertyListMenu" title="propertyListList.title" page="/propertyLists.html"/>
+	        <Item name="PropertyKeepListMenu" title="propertyKeepListList.title" page="/propertyKeepLists.html"/>
+	        <Item name="EnrolListMenu" title="enrolListList.title" page="/enrolLists.html"/>
+	 		<Item name="CheckupReportMenu" title="checkupReportList.title" page="/checkupReports.html"/>        
+	        <Item name="TransmitReturnReceiptMenu" title="transmitReturnReceiptList.title" page="/transmitReturnReceipts.html"/>
+	        <Item name="ReleaseForceWritMenu" title="releaseForceWritList.title" page="/releaseForceWrits.html"/>
+	        <Item name="BusinessLicenseMenu" title="businessLicenseList.title" page="/businessLicenses.html"/>
+	        <Item name="CheckItemMenu" title="checkItemList.title" page="/checkItems.html"/>
+	        <Item name="OtherCertMenu" title="otherCertList.title" page="/otherCerts.html"/>
+	        <Item name="CheckupProxyMenu" title="checkupProxyList.title" page="/checkupProxys.html"/>
+	        <Item name="CheckProxyItemMenu" title="checkProxyItemList.title" page="/checkProxyItems.html"/>
+        </Menu>
+        <Menu name="PunishMenu" title="punishExamineList.title" page="/punishExamines.html"> 
+	        <Item name="PunishExamineMenu" title="punishExamineList.title" page="/punishExamines.html"/>
+	        <Item name="VerifyCheckupMenu" title="verifyCheckupList.title" page="/verifyCheckups.html"/>
+	        <Item name="DiscussCaseRecMenu" title="discussCaseRecList.title" page="/discussCaseRecs.html"/>
+	        <Item name="HearOfWitnesseMenu" title="hearOfWitnesseList.title" page="/hearOfWitnesses.html"/>
+	        <Item name="PerformCaseMenu" title="performCaseList.title" page="/performCases.html"/>
+	        <Item name="PunishDecisionBookMenu" title="punishDecisionBookList.title" page="/punishDecisionBooks.html"/>
+	        <Item name="PunishDraftMenu" title="punishDraftList.title" page="/punishDrafts.html"/>
+	        <Item name="CaseInvestEndReportMenu" title="caseInvestEndReportList.title" page="/caseInvestEndReports.html"/>
+	        <Item name="AffixToPunishMenu" title="affixToPunishList.title" page="/affixToPunishs.html"/>
+	        <Item name="AdminApprizeMenu" title="adminApprizeList.title" page="/adminApprizes.html"/>
+	        <Item name="AmerceReceiptMenu" title="amerceReceiptList.title" page="/amerceReceipts.html"/>
+	        <Item name="CaseCatalogMenu" title="caseCatalogList.title" page="/caseCatalogs.html"/>
+	        <Item name="TransferCaseMenu" title="transferCaseList.title" page="/transferCases.html"/>
+	     	<Item name="HandoverCaseMenu" title="handoverCaseList.title" page="/handoverCases.html"/>
+ 	        <Item name="DerateOrPutOffMenu" title="derateOrPutOffList.title" page="/derateOrPutOffs.html"/>
+        </Menu>
+        
+        
+    </Menus>
+</MenuConfig>

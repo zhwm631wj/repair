@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.register.model.CaseReport"
+            table="casereport"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof--><generator class="uuid.hex">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="caseReporter"
+                    column="caseReporter"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="crsex"
+                    column="crSex"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="crbirthday"
+                    column="crBirthday"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="craddress"
+                    column="crAddress"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="crphone"
+                    column="crPhone"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="cridcard"
+                    column="crIDCard"
+                length="18"
+        >
+
+        </property>
+
+        <property
+            name="reportContent"
+                    column="reportContent"
+                length="1000"
+        >
+
+        </property>
+
+        <property
+            name="accepter"
+                    column="accepter"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="acceptDate"
+                    column="acceptDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="reportMethod"
+                    column="reportMethod"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="receiveOrgIdea"
+                    column="receiveOrgIdea"
+                length="500"
+        >
+
+        </property>
+
+        <property
+            name="receiveDate"
+                    column="receiveDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="caseStatus"
+                    column="caseStatus"
+                length="1"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

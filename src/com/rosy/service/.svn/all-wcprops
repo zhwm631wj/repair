@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service
+END
+PendingRequestManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/service/PendingRequestManager.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/service/UserManager.java
+END
+applicationContext-service.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/service/applicationContext-service.xml
+END
+UserExistsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/UserExistsException.java
+END
+MailEngine.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/MailEngine.java
+END
+SysLogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/service/SysLogManager.java
+END
+ApcaOrganizationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/34/trunk/apca/src/com/rosy/service/ApcaOrganizationManager.java
+END
+LookupManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/LookupManager.java
+END
+AttachmentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/25/trunk/apca/src/com/rosy/service/AttachmentManager.java
+END
+RoleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/RoleManager.java
+END
+UserSecurityAdvice.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/UserSecurityAdvice.java
+END
+Manager.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/12/trunk/apca/src/com/rosy/service/Manager.java
+END

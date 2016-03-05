@@ -1,0 +1,140 @@
+/* A CSS Framework by Mike Stenhouse of Content with Style */
+
+/* SITE SPECIFIC LAYOUT */
+    body {
+	    PADDING-RIGHT: 0px;
+		PADDING-LEFT: 0px;
+		FONT-SIZE: 80%;
+		PADDING-BOTTOM: 0px;
+		MARGIN: 0px;
+		PADDING-TOP: 0px;
+		FONT-FAMILY: tahoma, geneva, sans-serif;
+	    background: white  top left repeat-x;
+    }
+    div#page {
+        width: 950px;
+        margin:  0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    
+    /* HEADER */
+        div#header {
+            position: relative;
+            height:150px;
+            margin: 0 0 2em 0;
+            padding: 0px 0 0px 0px;
+            text-align: center;
+        }
+
+            div#switchLocale {
+                position: absolute;
+                right: 10px;
+            }
+        
+        div#branding {
+         	position: relative;
+            float: left;
+            width: 950px;
+            margin-right: 0px;
+            padding: 0px 0 0px 0px;
+        }
+
+    /* END HEADER */
+    
+    
+    /* CONTENT */
+        div#content {
+        position: relative;
+        text-align: center;
+        width: 951px;
+        BACKGROUND-COLOR: #F4F1E9;
+        BORDER-RIGHT: #464646 1px solid;
+        border-left:#464646 1px solid;
+        margin-left: 33px;
+        margin: 0 0 0 0;
+        padding: 0;
+		min-height: 350px;
+        }
+            body#error #content {
+                margin-top: 20px;
+            }
+        /* MAIN */
+            div#main {
+                background:#F6F6F8;
+            	text-align: left;
+            	width: 746px;
+            	margin-top: 8px;
+            	margin-left: 188px;
+            	margin-bottom: 3px;
+                min-height: 336px; 
+            }
+
+                div#main form ul li {
+                    list-style-type: none;
+                    margin-left: 0;
+                }
+        /* END MAIN */
+        
+        div#sub{
+
+        		background:#D2DBDD;
+        		position: absolute;
+            	text-align: center;
+            	right: 770px;
+            	top : 100px;
+            	width: 160px;
+                min-height: 200px;
+        }
+        /* SUB */
+            div#sub h2 {
+                margin-bottom: 5px;
+            }
+
+            div#sub ul {
+            	
+                margin: 0;
+            }
+
+            div#sub ul li {
+                list-style-type: none;
+                margin-left: -30px;
+                padding-bottom: 10px;
+            }
+
+                div#sub p.line {
+                    border-top: 1px dotted #ccc;
+                    margin: 15px 0;
+                }
+            
+        /* END SUB */
+        
+    /* END CONTENT */
+    
+    /* FOOTER */
+        div#footer {
+            color: #444;
+            padding: 0 39px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+            div#footer div#divider {
+                    margin: 0 0 4px 0;
+                    border-top: 1px solid #ccc;
+            }
+
+            div#footer div#divider div {
+                    margin: 1px 0 0 0;
+                    border-top: 6px solid #ebf5fc;
+            }
+
+            div#footer .left {
+                    float: left;
+            }
+
+            div#footer .right {
+                    float: right;
+            }
+    /* END FOOTER */
+/* END LAYOUT */

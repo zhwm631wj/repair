@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- ========== Data Sources Definitions =================================== -->
+	<!--
+		Define your Struts data sources in a file called struts-data-sources.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans>
+		<form-bean name="affixToPunishForm"
+			type="com.rosy.punish.webapp.form.AffixToPunishForm" />
+		<form-bean name="verifyCheckupForm"
+			type="com.rosy.punish.webapp.form.VerifyCheckupForm" />
+		<form-bean name="punishDraftForm"
+			type="com.rosy.punish.webapp.form.PunishDraftForm" />
+		<form-bean name="punishDecisionBookForm"
+			type="com.rosy.punish.webapp.form.PunishDecisionBookForm" />
+		<form-bean name="caseCatalogForm"
+			type="com.rosy.punish.webapp.form.CaseCatalogForm" />
+		<form-bean name="caseInvestEndReportForm"
+			type="com.rosy.punish.webapp.form.CaseInvestEndReportForm" />
+		<form-bean name="amerceReceiptForm"
+			type="com.rosy.punish.webapp.form.AmerceReceiptForm" />
+		<form-bean name="punishExamineForm"
+			type="com.rosy.punish.webapp.form.PunishExamineForm" />
+		<form-bean name="hearOfWitnesseForm"
+			type="com.rosy.punish.webapp.form.HearOfWitnesseForm" />
+		<form-bean name="pendingRequestForm"
+			type="com.rosy.webapp.form.PendingRequestForm" />
+		<form-bean name="sysLogForm"
+			type="com.rosy.webapp.form.SysLogForm" />
+		<form-bean name="adminApprizeForm"
+			type="com.rosy.punish.webapp.form.AdminApprizeForm" />
+		<form-bean name="performCaseForm"
+			type="com.rosy.punish.webapp.form.PerformCaseForm" />
+		<form-bean name="discussCaseRecForm"
+			type="com.rosy.punish.webapp.form.DiscussCaseRecForm" />
+		<form-bean name="derateOrPutOffForm"
+			type="com.rosy.punish.webapp.form.DerateOrPutOffForm" />
+
+	</form-beans>
+
+	<!-- ========== Action Mapping Definitions =================================== -->
+	<action-mappings>
+		<action path="/performCases"
+			type="com.rosy.punish.webapp.action.PerformCaseAction"
+			name="performCaseForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/performCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/performCaseList.jsp" redirect="false" />
+			<forward name="search" path="/performCases.html"
+				redirect="true" />
+		</action>
+		<action path="/editPerformCase"
+			type="com.rosy.punish.webapp.action.PerformCaseAction"
+			name="performCaseForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/performCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/performCaseList.jsp" redirect="false" />
+			<forward name="search" path="/performCases.html"
+				redirect="true" />
+		</action>
+		<action path="/savePerformCase"
+			type="com.rosy.punish.webapp.action.PerformCaseAction"
+			name="performCaseForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/performCaseForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/performCaseList.jsp" redirect="false" />
+			<forward name="search" path="/performCases.html"
+				redirect="true" />
+		</action>
+
+		<action path="/punishExamines"
+			type="com.rosy.punish.webapp.action.PunishExamineAction"
+			name="punishExamineForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishExamineForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishExamineList.jsp" redirect="false" />
+			<forward name="search" path="/punishExamines.html"
+				redirect="true" />
+		</action>
+		<action path="/editPunishExamine"
+			type="com.rosy.punish.webapp.action.PunishExamineAction"
+			name="punishExamineForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishExamineForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishExamineList.jsp" redirect="false" />
+			<forward name="search" path="/punishExamines.html"
+				redirect="true" />
+		</action>
+		<action path="/savePunishExamine"
+			type="com.rosy.punish.webapp.action.PunishExamineAction"
+			name="punishExamineForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishExamineForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishExamineList.jsp" redirect="false" />
+			<forward name="search" path="/punishExamines.html"
+				redirect="true" />
+		</action>
+
+
+
+		<action path="/discussCaseRecs"
+			type="com.rosy.punish.webapp.action.DiscussCaseRecAction"
+			name="discussCaseRecForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/discussCaseRecForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/discussCaseRecList.jsp"
+				redirect="false" />
+			<forward name="search" path="/discussCaseRecs.html"
+				redirect="true" />
+		</action>
+		<action path="/editDiscussCaseRec"
+			type="com.rosy.punish.webapp.action.DiscussCaseRecAction"
+			name="discussCaseRecForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/discussCaseRecForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/discussCaseRecList.jsp"
+				redirect="false" />
+			<forward name="search" path="/discussCaseRecs.html"
+				redirect="true" />
+		</action>
+		<action path="/saveDiscussCaseRec"
+			type="com.rosy.punish.webapp.action.DiscussCaseRecAction"
+			name="discussCaseRecForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/discussCaseRecForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/discussCaseRecList.jsp"
+				redirect="false" />
+			<forward name="search" path="/discussCaseRecs.html"
+				redirect="true" />
+		</action>
+
+		<action path="/affixToPunishs"
+			type="com.rosy.punish.webapp.action.AffixToPunishAction"
+			name="affixToPunishForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/affixToPunishForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/affixToPunishList.jsp" redirect="false" />
+			<forward name="search" path="/affixToPunishs.html"
+				redirect="true" />
+		</action>
+		<action path="/editAffixToPunish"
+			type="com.rosy.punish.webapp.action.AffixToPunishAction"
+			name="affixToPunishForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/affixToPunishForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/affixToPunishList.jsp" redirect="false" />
+			<forward name="search" path="/affixToPunishs.html"
+				redirect="true" />
+		</action>
+		<action path="/saveAffixToPunish"
+			type="com.rosy.punish.webapp.action.AffixToPunishAction"
+			name="affixToPunishForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/affixToPunishForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/affixToPunishList.jsp" redirect="false" />
+			<forward name="search" path="/affixToPunishs.html"
+				redirect="true" />
+		</action>
+
+
+		<action path="/punishDrafts"
+			type="com.rosy.punish.webapp.action.PunishDraftAction"
+			name="punishDraftForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDraftForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDraftList.jsp" redirect="false" />
+			<forward name="search" path="/punishDrafts.html"
+				redirect="true" />
+		</action>
+		<action path="/editPunishDraft"
+			type="com.rosy.punish.webapp.action.PunishDraftAction"
+			name="punishDraftForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDraftForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDraftList.jsp" redirect="false" />
+			<forward name="search" path="/punishDrafts.html"
+				redirect="true" />
+		</action>
+		<action path="/savePunishDraft"
+			type="com.rosy.punish.webapp.action.PunishDraftAction"
+			name="punishDraftForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDraftForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDraftList.jsp" redirect="false" />
+			<forward name="search" path="/punishDrafts.html"
+				redirect="true" />
+		</action>
+
+
+		<action path="/adminApprizes"
+			type="com.rosy.punish.webapp.action.AdminApprizeAction"
+			name="adminApprizeForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/adminApprizeForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/adminApprizeList.jsp" redirect="false" />
+			<forward name="search" path="/adminApprizes.html"
+				redirect="true" />
+		</action>
+		<action path="/editAdminApprize"
+			type="com.rosy.punish.webapp.action.AdminApprizeAction"
+			name="adminApprizeForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/adminApprizeForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/adminApprizeList.jsp" redirect="false" />
+			<forward name="search" path="/adminApprizes.html"
+				redirect="true" />
+		</action>
+		<action path="/saveAdminApprize"
+			type="com.rosy.punish.webapp.action.AdminApprizeAction"
+			name="adminApprizeForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/adminApprizeForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/adminApprizeList.jsp" redirect="false" />
+			<forward name="search" path="/adminApprizes.html"
+				redirect="true" />
+		</action>
+
+
+		<action path="/caseCatalogs"
+			type="com.rosy.punish.webapp.action.CaseCatalogAction"
+			name="caseCatalogForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseCatalogForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseCatalogList.jsp" redirect="false" />
+			<forward name="search" path="/caseCatalogs.html"
+				redirect="true" />
+		</action>
+		<action path="/editCaseCatalog"
+			type="com.rosy.punish.webapp.action.CaseCatalogAction"
+			name="caseCatalogForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseCatalogForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseCatalogList.jsp" redirect="false" />
+			<forward name="search" path="/caseCatalogs.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCaseCatalog"
+			type="com.rosy.punish.webapp.action.CaseCatalogAction"
+			name="caseCatalogForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseCatalogForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseCatalogList.jsp" redirect="false" />
+			<forward name="search" path="/caseCatalogs.html"
+				redirect="true" />
+		</action>
+		<action path="/verifyCheckups"
+			type="com.rosy.punish.webapp.action.VerifyCheckupAction"
+			name="verifyCheckupForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/verifyCheckupForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/verifyCheckupList.jsp" redirect="false" />
+			<forward name="search" path="/verifyCheckups.html"
+				redirect="true" />
+		</action>
+		<action path="/editVerifyCheckup"
+			type="com.rosy.punish.webapp.action.VerifyCheckupAction"
+			name="verifyCheckupForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/verifyCheckupForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/verifyCheckupList.jsp" redirect="false" />
+			<forward name="search" path="/verifyCheckups.html"
+				redirect="true" />
+		</action>
+		<action path="/saveVerifyCheckup"
+			type="com.rosy.punish.webapp.action.VerifyCheckupAction"
+			name="verifyCheckupForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/verifyCheckupForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/verifyCheckupList.jsp" redirect="false" />
+			<forward name="search" path="/verifyCheckups.html"
+				redirect="true" />
+		</action>
+
+
+
+		<action path="/hearOfWitnesses"
+			type="com.rosy.punish.webapp.action.HearOfWitnesseAction"
+			name="hearOfWitnesseForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/hearOfWitnesseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/hearOfWitnesseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/hearOfWitnesses.html"
+				redirect="true" />
+		</action>
+		<action path="/editHearOfWitnesse"
+			type="com.rosy.punish.webapp.action.HearOfWitnesseAction"
+			name="hearOfWitnesseForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/hearOfWitnesseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/hearOfWitnesseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/hearOfWitnesses.html"
+				redirect="true" />
+		</action>
+		<action path="/saveHearOfWitnesse"
+			type="com.rosy.punish.webapp.action.HearOfWitnesseAction"
+			name="hearOfWitnesseForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/hearOfWitnesseForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/hearOfWitnesseList.jsp"
+				redirect="false" />
+			<forward name="search" path="/hearOfWitnesses.html"
+				redirect="true" />
+		</action>
+		<action path="/amerceReceipts"
+			type="com.rosy.punish.webapp.action.AmerceReceiptAction"
+			name="amerceReceiptForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/amerceReceiptForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/amerceReceiptList.jsp" redirect="false" />
+			<forward name="search" path="/amerceReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/editAmerceReceipt"
+			type="com.rosy.punish.webapp.action.AmerceReceiptAction"
+			name="amerceReceiptForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/amerceReceiptForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/amerceReceiptList.jsp" redirect="false" />
+			<forward name="search" path="/amerceReceipts.html"
+				redirect="true" />
+		</action>
+		<action path="/saveAmerceReceipt"
+			type="com.rosy.punish.webapp.action.AmerceReceiptAction"
+			name="amerceReceiptForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/amerceReceiptForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/amerceReceiptList.jsp" redirect="false" />
+			<forward name="search" path="/amerceReceipts.html"
+				redirect="true" />
+		</action>
+
+
+		<action path="/caseInvestEndReports"
+			type="com.rosy.punish.webapp.action.CaseInvestEndReportAction"
+			name="caseInvestEndReportForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseInvestEndReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseInvestEndReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/caseInvestEndReports.html"
+				redirect="true" />
+		</action>
+		<action path="/editCaseInvestEndReport"
+			type="com.rosy.punish.webapp.action.CaseInvestEndReportAction"
+			name="caseInvestEndReportForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseInvestEndReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseInvestEndReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/caseInvestEndReports.html"
+				redirect="true" />
+		</action>
+		<action path="/saveCaseInvestEndReport"
+			type="com.rosy.punish.webapp.action.CaseInvestEndReportAction"
+			name="caseInvestEndReportForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/caseInvestEndReportForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/caseInvestEndReportList.jsp"
+				redirect="false" />
+			<forward name="search" path="/caseInvestEndReports.html"
+				redirect="true" />
+		</action>
+
+		<action path="/punishDecisionBooks"
+			type="com.rosy.punish.webapp.action.PunishDecisionBookAction"
+			name="punishDecisionBookForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDecisionBookForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDecisionBookList.jsp"
+				redirect="false" />
+			<forward name="search" path="/punishDecisionBooks.html"
+				redirect="true" />
+		</action>
+		<action path="/editPunishDecisionBook"
+			type="com.rosy.punish.webapp.action.PunishDecisionBookAction"
+			name="punishDecisionBookForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDecisionBookForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDecisionBookList.jsp"
+				redirect="false" />
+			<forward name="search" path="/punishDecisionBooks.html"
+				redirect="true" />
+		</action>
+		<action path="/savePunishDecisionBook"
+			type="com.rosy.punish.webapp.action.PunishDecisionBookAction"
+			name="punishDecisionBookForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/punishDecisionBookForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/punishDecisionBookList.jsp"
+				redirect="false" />
+			<forward name="search" path="/punishDecisionBooks.html"
+				redirect="true" />
+		</action>
+
+		<action path="/derateOrPutOffs"
+			type="com.rosy.punish.webapp.action.DerateOrPutOffAction"
+			name="derateOrPutOffForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/derateOrPutOffForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/derateOrPutOffList.jsp"
+				redirect="false" />
+			<forward name="search" path="/derateOrPutOffs.html"
+				redirect="true" />
+		</action>
+		<action path="/editDerateOrPutOff"
+			type="com.rosy.punish.webapp.action.DerateOrPutOffAction"
+			name="derateOrPutOffForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/derateOrPutOffForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/derateOrPutOffList.jsp"
+				redirect="false" />
+			<forward name="search" path="/derateOrPutOffs.html"
+				redirect="true" />
+		</action>
+		<action path="/saveDerateOrPutOff"
+			type="com.rosy.punish.webapp.action.DerateOrPutOffAction"
+			name="derateOrPutOffForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/punish/derateOrPutOffForm.jsp"
+				redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/punish/derateOrPutOffList.jsp"
+				redirect="false" />
+			<forward name="search" path="/derateOrPutOffs.html"
+				redirect="true" />
+		</action>
+		
+			</action-mappings>
+
+
+</struts-config>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+
+>
+
+    <class
+            name="com.rosy.investigate.model.OtherCert"
+            table="othercert"
+    >
+
+    <id
+        name="id"
+            column="ID"
+                type="java.lang.String"
+    >
+
+    <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof--><generator class="uuid.hex">
+
+    </generator>
+
+    </id>
+
+        <property
+            name="certName"
+                    column="certName"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="certNo"
+                    column="certNO"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="cname"
+                    column="cName"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="pbound"
+                    column="pBound"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="dealInWhere"
+                    column="dealInWhere"
+                length="50"
+        >
+
+        </property>
+
+        <property
+            name="dealInMode"
+                    column="dealInMode"
+                length="30"
+        >
+
+        </property>
+
+        <property
+            name="validStartDate"
+                    column="validStartDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="validEndDate"
+                    column="validEndDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="issueCertOrg"
+                    column="issueCertOrg"
+                length="100"
+        >
+
+        </property>
+
+        <property
+            name="issueDate"
+                    column="issueDate"
+                length="19"
+        >
+
+        </property>
+
+        <property
+            name="remark"
+                    column="remark"
+                length="200"
+        >
+
+        </property>
+
+        <property
+            name="rflag"
+                    column="rFlag"
+                length="1"
+        >
+
+        </property>
+
+        <property
+            name="createDate"
+                    column="createDate"
+                length="19"
+        >
+
+        </property>
+
+    </class>    
+
+</hibernate-mapping>
+

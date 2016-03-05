@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="com.rosy.investigate.model.CheckupReport"
+		table="checkupreport">
+
+		<id name="id" column="ID" type="java.lang.String">
+
+			<!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag insteaof-->
+			<generator class="uuid">
+
+			</generator>
+
+		</id>
+
+		<property name="repNum" column="repNum" length="100">
+
+		</property>
+
+		<property name="productName" column="productName"
+			length="200">
+
+		</property>
+
+		<property name="spec" column="spec" length="50">
+
+		</property>
+
+		<property name="brand" column="brand" length="100">
+
+		</property>
+
+		<property name="productionOrg" column="productionOrg"
+			length="100">
+
+		</property>
+
+		<property name="sellOrg" column="sellOrg" length="100">
+
+		</property>
+
+		<property name="checkResult" column="checkResult"
+			length="8000">
+
+		</property>
+
+		<property name="checkOrg" column="checkOrg" length="100">
+
+		</property>
+
+		<property name="markDate" column="markDate" length="19">
+
+		</property>
+
+		<property name="remark" column="remark" length="200">
+
+		</property>
+
+		<property name="rflag" column="rFlag" length="1">
+
+		</property>
+
+		<property name="createDate" column="createDate" length="19">
+
+		</property>
+
+	</class>
+
+</hibernate-mapping>
+

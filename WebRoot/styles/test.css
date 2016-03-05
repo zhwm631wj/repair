@@ -1,0 +1,451 @@
+* {
+	font-family: arial;
+	font-size: 14px;
+}
+
+body {
+	margin: 0;
+	background: #fff;
+	text-align: center;
+	padding: 0 0 20px;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3 {
+	font-size: 16px;
+}
+
+h4,h5,h6 {
+	font-size: 14px;
+}
+
+p {
+	line-height: 1.5em;
+	margin-bottom: 1em;
+	text-indent: 0px;
+}
+
+ul,li,dl,dt,dd {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0px;
+	margin: 0;
+}
+
+a,a:link,a:visited,a:active {
+	text-decoration: none;
+	color: #195A94;
+}
+
+a:visited {
+	color: #551a8b;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.real-wrap {
+	width: 990px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 7px 0px 8px;
+}
+
+.site-logo {
+	float: left;
+	width: 400px;
+	height: 28px;
+	overflow: hidden;
+	margin-left: 11px;
+	_margin-left: 6px;
+}
+
+.lang-nav {
+	float: right;
+	width: 200px;
+	text-align: right;
+	color: #C0D7DF;
+	padding-top: 0.5em;
+}
+
+.lang-nav span {
+	color: #72A5B8;
+}
+
+.lang-nav a,.lang-nav a:link,.lang-nav a:visited,.lang-nav a:hover,.lang-nav a:active
+	{
+	color: #72A5B8;
+}
+
+.sitenav {
+	height: 38px;
+	background: #fff
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_panel.gif)
+		repeat-x 0 5px;
+	overflow: hidden;
+}
+
+.sitenav .real-wrap {
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_menu.jpg)
+		no-repeat 0 0;
+}
+
+.breadcrumb {
+	height: 26px;
+	background: #E7EEEE
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_panel.gif)
+		repeat-x 0 -34px;
+	overflow: hidden;
+}
+
+.breadcrumb ul {
+	margin: 4px 25px;
+	padding-left: 0px;
+}
+
+.breadcrumb li {
+	display: inline;
+	padding: 0px 2px 0px 16px;
+	margin-right: 8px;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/split.gif)
+		no-repeat 0 50%; *
+	background-position: 0 0;
+	height: 18px;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.breadcrumb li.first {
+	padding: 0px;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/home.gif)
+		no-repeat;
+	height: 0px;
+	line-height: 0px;
+	width: 16px;
+}
+
+.breadcrumb a,.breadcrumb a:link,.breadcrumb a:visited,.breadcrumb a:hover,.breadcrumb a:active
+	{
+	color: #1b5994;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+.breadcrumb a.curr,.breadcrumb a.curr:link,.breadcrumb a.curr:visited,.breadcrumb a.curr:hover,.breadcrumb a.curr:active
+	{
+	
+}
+
+.breadcrumb a.home,.breadcrumb a.home:link,.breadcrumb a.home:visited,.breadcrumb a.home:hover,.breadcrumb a.home:active
+	{
+	display: -moz-inline-box; *
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.banner {
+	background: #E2DFDA
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_panel.gif)
+		repeat-x 0 0;
+	overflow: hidden;
+}
+
+.main {
+	background: #fff;
+}
+
+.main h3 {
+	padding-left: 20px;
+	line-height: 2em;
+	margin: 1em auto;
+	color: #195A95;
+	letter-spacing: 1px;
+}
+
+.main h4 {
+	padding-left: 40px;
+	line-height: 2em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px dotted #BAC6D8;
+	color: #195A95;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/dot.gif)
+		no-repeat 20px 50%;
+}
+
+.main h5 {
+	color: #6A6A6A;
+	line-height: 2em;
+}
+
+.leftcontent {
+	float: left;
+	width: 180px;
+	text-align: center;
+	margin: 0px; *
+	margin: 25px 0px;
+}
+
+.maincontent {
+	padding-left: 213px;
+	margin: 25px 0px;
+}
+
+.leftnav {
+	width: 168px;
+	margin: 0px auto;
+	text-align: left;
+}
+
+.leftnavtop {
+	height: 2px;
+	overflow: hidden;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_leftnav_tb.png)
+		no-repeat 0 0;
+}
+
+.leftnavbottom {
+	height: 2px;
+	overflow: hidden;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_leftnav_tb.png)
+		no-repeat 0 -2px;
+}
+
+.leftnavmiddle {
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_leftnav_center.png)
+		no-repeat top left;
+}
+
+.leftnavmiddle ul {
+	margin: 0 3px;
+	padding: 5px 0px;
+}
+
+.leftnavmiddle li {
+	margin: 0 0 5px;
+	letter-spacing: 2px;
+}
+
+.leftnavmiddle li a,.leftnavmiddle li a:link,.leftnavmiddle li a:visited,.leftnavmiddle li a:hover,.leftnavmiddle li a:active
+	{
+	padding: 0px 20px;
+	display: block;
+	line-height: 27px;
+	height: 27px;
+	text-decoration: none;
+	color: #154570;
+}
+
+.leftnavmiddle li a:hover {
+	text-decoration: underline;
+}
+
+.leftnavmiddle li.selected a,.leftnavmiddle li.selected a:link,.leftnavmiddle li.selected a:visited,.leftnavmiddle li.selected a:hover,.leftnavmiddle li.selected a:active
+	{
+	background: #9BAAAD;
+	color: #fff;
+	font-weight: bold;
+}
+
+.maincontent ul {
+	padding: 0;
+	margin: 0;
+}
+
+.maincontent li {
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/dot.gif)
+		no-repeat 0 9px;
+}
+
+/*.maincontent li p {margin:-23px 0 0 90px;  *margin-top:-22px; } */
+.maincontent li p {
+	margin-left: 20px;
+	padding-left: 100px;
+}
+
+.maincontent li span.posttime {
+	display: -moz-inline-box;
+	display: inline-block;
+	width: 100px;
+	color: #48a682;
+	margin-left: -100px;
+}
+
+.maincontent strong {
+	color: #E57C00;
+	text-decoration: underline;
+}
+
+.footer {
+	background: #fff
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_panel.gif)
+		repeat-x 0 -60px;
+	padding-top: 70px;
+}
+
+.footer ul {
+	margin: 5px 0px 5px 10px;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/bg_footer_info.gif)
+		no-repeat 5px 0;
+	padding-left: 26px;
+	min-height: 16px;
+	height: 16px;
+}
+
+.footer li {
+	display: inline;
+	border-right: 1px #C1D0D7 solid;
+	padding-right: 8px;
+	margin-right: 9px;
+}
+
+.footer li.last {
+	border-right: 0px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer a,.footer a:link,.footer a:visited,.footer a:hover,.footer a:active
+	{
+	color: #4691B9;
+	font-size: 12px;
+}
+
+.footer p {
+	font-family: arial;
+	color: #A0B1BB;
+	font-size: 12px;
+	line-height: 24px;
+	width: 430px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	padding-left: 2px;
+	background: transparent
+		url(http://imgcache.qq.com/ac/www_tencent/public/styles/images/line.gif)
+		repeat-x top left;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+
+/* End hide from IE-mac */
+.iframe {
+	width: 100%;
+	border: 0px;
+	height: expression(1);
+	aho: expression(autoRe(this, ifm) );
+	overflow: hidden;
+}
+
+em {
+	color: #E57C00;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.showp {
+	display: block;
+}
+
+.hidep {
+	display: none;
+}
+
+/*.posttime {display:-moz-inline-box; display:inline-block; width:80px; color:#48a682; margin-right:12px; }*/
+#homepage .banner {
+	height: 301px;
+	background-position: 0 -191px;
+}
+
+#wb .banner {
+	height: 121px;
+	background-position: 0 -492px;
+}
+
+#at .banner {
+	height: 121px;
+	background-position: 0 -692px;
+}
+
+#cc .banner {
+	height: 121px;
+	background-position: 0 -893px;
+}
+
+#ps .banner {
+	height: 121px;
+	background-position: 0 -1093px;
+}
+
+#ir .banner {
+	height: 121px;
+	background-position: 0 -1293px;
+}
+
+#ir_stock .banner {
+	height: 121px;
+	background-position: 0 -1493px;
+}
+
+#le .banner {
+	height: 121px;
+	background-position: 0 -1693px;
+}
+
+#ca .banner {
+	height: 121px;
+	background-position: 0 -1893px;
+}
+
+#mp .banner {
+	height: 121px;
+	background-position: 0 -2093px;
+}
+
+#cs .banner {
+	height: 121px;
+	background-position: 0 -2293px;
+}

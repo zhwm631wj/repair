@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- ========== Data Sources Definitions =================================== -->
+	<!--
+		Define your Struts data sources in a file called struts-data-sources.xml and place
+		it in your merge directory.
+	-->
+
+	<!-- ========== Form Bean Definitions =================================== -->
+	<form-beans>
+		<form-bean name="apcaOrganizationForm"
+			type="com.rosy.webapp.form.ApcaOrganizationForm" />
+		<form-bean name="attachmentForm"
+			type="com.rosy.webapp.form.AttachmentForm" />
+		<form-bean name="uploadForm"
+			type="com.rosy.webapp.form.UploadForm" />
+		<form-bean name="roleForm" type="com.rosy.webapp.form.RoleForm" />
+		<form-bean name="userForm" type="com.rosy.webapp.form.UserForm" />
+		<form-bean name="addressForm"
+			type="com.rosy.webapp.form.AddressForm" />
+		<form-bean name="pendingRequestForm"
+			type="com.rosy.webapp.form.PendingRequestForm" />
+		<form-bean name="sysLogForm"
+			type="com.rosy.webapp.form.SysLogForm" />
+		
+	
+		<!--
+			If you have non XDoclet forms, define them in a file called struts-forms.xml and
+			place it in your merge directory.
+		-->
+	</form-beans>
+
+	<!-- ========== Global Exceptions Definitions =================================== -->
+	<global-exceptions>
+		<exception type="java.lang.Exception" key="errors.general"
+			handler="com.rosy.webapp.action.ActionExceptionHandler" />
+	</global-exceptions>
+
+	<!-- ========== Global Forward Definitions =================================== -->
+	<global-forwards>
+		<forward name="mainMenu" path="/mainMenu.html" redirect="true" />
+		<!-- Forwards specified in actions -->
+		<forward name="addUser"
+			path="/editUser.html?method=Add&amp;amp;from=list" redirect="true" />
+		<forward name="cancelUser" path="/editUser.html?method=Cancel" />
+		<forward name="deleteUser" path="/editUser.html?method=Delete" />
+		<forward name="updateUser" path="/userProfile.html" />
+		<!-- Forwards for links used in Menu -->
+		<forward name="editProfile" path="/editProfile.html" />
+		<forward name="editUser" path="/editUser.html" />
+		<forward name="viewUsers" path="/users.html" redirect="true" />
+		<forward name="selectFile" path="/selectFile.html" />
+		<forward name="logout" path="/logout.jsp" />
+	</global-forwards>
+
+	<!-- ========== Action Mapping Definitions =================================== -->
+	<action-mappings>
+		<action path="/users" type="com.rosy.webapp.action.UserAction"
+			name="userForm" scope="request" input="mainMenu" roles="admin"
+			parameter="method" unknown="false" validate="false">
+			<forward name="list" path="/WEB-INF/pages/userList.jsp"
+				redirect="false" />
+			<forward name="edit" path="/WEB-INF/pages/userForm.jsp"
+				redirect="false" />
+		</action>
+		<action path="/editUser"
+			type="com.rosy.webapp.action.UserAction" name="userForm"
+			scope="request" input="list" roles="admin" parameter="method"
+			unknown="false" validate="false">
+			<forward name="list" path="/WEB-INF/pages/userList.jsp"
+				redirect="false" />
+			<forward name="edit" path="/WEB-INF/pages/userForm.jsp"
+				redirect="false" />
+		</action>
+		<action path="/editProfile"
+			type="com.rosy.webapp.action.UserAction" name="userForm"
+			scope="request" input="mainMenu" parameter="method" unknown="false"
+			validate="false">
+			<forward name="list" path="/WEB-INF/pages/userList.jsp"
+				redirect="false" />
+			<forward name="edit" path="/WEB-INF/pages/userForm.jsp"
+				redirect="false" />
+		</action>
+		<action path="/saveUser"
+			type="com.rosy.webapp.action.UserAction" name="userForm"
+			scope="request" input="edit" parameter="method" unknown="false"
+			validate="false">
+			<forward name="list" path="/WEB-INF/pages/userList.jsp"
+				redirect="false" />
+			<forward name="edit" path="/WEB-INF/pages/userForm.jsp"
+				redirect="false" />
+			<forward name="editPass"
+				path="/WEB-INF/pages/changePassword.jsp" redirect="false" />
+		</action>
+		<action path="/signup"
+			type="com.rosy.webapp.action.SignupAction" name="userForm"
+			scope="request" input="failure" unknown="false" validate="false">
+			<forward name="failure" path="/WEB-INF/pages/signup.jsp"
+				redirect="false" />
+			<forward name="success" path="/mainMenu.html"
+				redirect="true" />
+		</action>
+		<action path="/passwordHint"
+			type="com.rosy.webapp.action.PasswordHintAction" unknown="false"
+			validate="false">
+			<forward name="previousPage" path="/" redirect="false" />
+		</action>
+		<action path="/reload"
+			type="com.rosy.webapp.action.ReloadAction" roles="admin"
+			unknown="false" validate="false">
+		</action>
+		<action path="/uploadFile"
+			type="com.rosy.webapp.action.UploadAction" name="uploadForm"
+			scope="request" input="failure" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="failure" path="/WEB-INF/pages/uploadForm.jsp"
+				redirect="false" />
+			<forward name="success"
+				path="/WEB-INF/pages/uploadDisplay.jsp" redirect="false" />
+		</action>
+		<action path="/attachments"
+			type="com.rosy.webapp.action.AttachmentAction" name="attachmentForm"
+			scope="request" input="mainMenu" parameter="method" unknown="false"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/attachmentForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/attachmentList.jsp" redirect="false" />
+			<forward name="search" path="/attachments.html"
+				redirect="true" />
+			<forward name="fileCache" path="/uploadfile/filelist.jsp"
+				redirect="true" />
+		</action>
+		<action path="/editAttachment"
+			type="com.rosy.webapp.action.AttachmentAction" name="attachmentForm"
+			scope="request" input="list" parameter="method" unknown="false"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/attachmentForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/attachmentList.jsp" redirect="false" />
+			<forward name="search" path="/attachments.html"
+				redirect="true" />
+
+		</action>
+		<action path="/saveAttachment"
+			type="com.rosy.webapp.action.AttachmentAction" name="attachmentForm"
+			scope="request" input="edit" parameter="method" unknown="false"
+			validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/attachmentForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/attachmentList.jsp" redirect="false" />
+			<forward name="search" path="/attachments.html"
+				redirect="true" />
+		</action>
+		<!-- apcaOrganization begin -->
+		<action path="/apcaOrganizations"
+			type="com.rosy.webapp.action.ApcaOrganizationAction"
+			name="apcaOrganizationForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/apcaOrganizationForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/apcaOrganizationList.jsp" redirect="false" />
+			<forward name="search" path="/apcaOrganizations.html"
+				redirect="true" />
+		</action>
+		<action path="/editApcaOrganization"
+			type="com.rosy.webapp.action.ApcaOrganizationAction"
+			name="apcaOrganizationForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/apcaOrganizationForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/apcaOrganizationList.jsp" redirect="false" />
+			<forward name="search" path="/apcaOrganizations.html"
+				redirect="true" />
+		</action>
+		<action path="/saveApcaOrganization"
+			type="com.rosy.webapp.action.ApcaOrganizationAction"
+			name="apcaOrganizationForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/apcaOrganizationForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/apcaOrganizationList.jsp" redirect="false" />
+			<forward name="search" path="/apcaOrganizations.html"
+				redirect="true" />
+		</action>
+
+		<action path="/sysLogs"
+			type="com.rosy.webapp.action.SysLogAction" name="sysLogForm"
+			scope="request" input="mainMenu" parameter="method" unknown="false"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit" path="/WEB-INF/pages/sysLogForm.jsp"
+				redirect="false" />
+			<forward name="list" path="/WEB-INF/pages/sysLogList.jsp"
+				redirect="false" />
+			<forward name="search" path="/sysLogs.html" redirect="true" />
+		</action>
+		<action path="/editSysLog"
+			type="com.rosy.webapp.action.SysLogAction" name="sysLogForm"
+			scope="request" input="list" parameter="method" unknown="false"
+			validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit" path="/WEB-INF/pages/sysLogForm.jsp"
+				redirect="false" />
+			<forward name="list" path="/WEB-INF/pages/sysLogList.jsp"
+				redirect="false" />
+			<forward name="search" path="/sysLogs.html" redirect="true" />
+		</action>
+		<action path="/saveSysLog"
+			type="com.rosy.webapp.action.SysLogAction" name="sysLogForm"
+			scope="request" input="edit" parameter="method" unknown="false"
+			validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit" path="/WEB-INF/pages/sysLogForm.jsp"
+				redirect="false" />
+			<forward name="list" path="/WEB-INF/pages/sysLogList.jsp"
+				redirect="false" />
+			<forward name="search" path="/sysLogs.html" redirect="true" />
+		</action>
+
+
+		<action path="/pendingRequests"
+			type="com.rosy.webapp.action.PendingRequestAction"
+			name="pendingRequestForm" scope="request" input="mainMenu"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/pendingRequestForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/pendingRequestList.jsp" redirect="false" />
+			<forward name="search" path="/pendingRequests.html"
+				redirect="true" />
+		</action>
+		<action path="/editPendingRequest"
+			type="com.rosy.webapp.action.PendingRequestAction"
+			name="pendingRequestForm" scope="request" input="list"
+			parameter="method" unknown="false" validate="false">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/pendingRequestForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/pendingRequestList.jsp" redirect="false" />
+			<forward name="search" path="/pendingRequests.html"
+				redirect="true" />
+		</action>
+		<action path="/savePendingRequest"
+			type="com.rosy.webapp.action.PendingRequestAction"
+			name="pendingRequestForm" scope="request" input="edit"
+			parameter="method" unknown="false" validate="true">
+			<set-property property="cancellable" value="true" />
+			<forward name="edit"
+				path="/WEB-INF/pages/pendingRequestForm.jsp" redirect="false" />
+			<forward name="list"
+				path="/WEB-INF/pages/pendingRequestList.jsp" redirect="false" />
+			<forward name="search" path="/pendingRequests.html"
+				redirect="true" />
+		</action>
+		<!-- Forwards to the mainMenu tile definition -->
+		<action path="/mainMenu"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/WEB-INF/pages/mainMenu.jsp" />
+
+		<!-- Action to flush cache -->
+		<action path="/flush"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/WEB-INF/pages/flushCache.jsp" roles="admin" />
+
+		<!-- Forward to page to begin file upload -->
+		<action path="/selectFile"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/WEB-INF/pages/uploadForm.jsp" />
+		<!-- Forward to view Active Users -->
+		<action path="/activeUsers"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/WEB-INF/pages/activeUsers.jsp" roles="admin" />
+
+		<action path="/process"
+			type="org.apache.struts.actions.ForwardAction"
+			parameter="/common/process.jsp" />
+	</action-mappings>
+
+	<controller nocache="true" inputForward="true" maxFileSize="2M" />
+
+	<message-resources parameter="ApplicationResources" />
+
+	<!-- ========== Validator plugin ===================  -->
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/WEB-INF/validator-rules.xml,
+                             /WEB-INF/validator-rules-custom.xml,
+                             /WEB-INF/validation.xml,/WEB-INF/validation-punish.xml,/WEB-INF/validation-investigate.xml,/WEB-INF/validation-register.xml" />
+	</plug-in>
+
+</struts-config>

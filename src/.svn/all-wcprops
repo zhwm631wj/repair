@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/10/trunk/apca/src
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/10/trunk/apca/src/ehcache.xml
+END
+ApplicationResources_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/59/trunk/apca/src/ApplicationResources_zh_CN.properties
+END
+oscache.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10/trunk/apca/src/oscache.properties
+END
+accountCreated.vm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/53/trunk/apca/src/accountCreated.vm
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/10/trunk/apca/src/log4j.properties
+END
+basicData.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/59/trunk/apca/src/basicData.xml
+END
+displaytag_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/10/trunk/apca/src/displaytag_zh_CN.properties
+END
+cssVerticalMenu.vm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/10/trunk/apca/src/cssVerticalMenu.vm
+END
+ApplicationResources_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/10/trunk/apca/src/ApplicationResources_en.properties
+END
+ApplicationResources_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/56/trunk/apca/src/ApplicationResources_zh.properties
+END
+ApplicationResources.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/39/trunk/apca/src/ApplicationResources.properties
+END
+mail.properties
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/10/trunk/apca/src/mail.properties
+END
+ApplicationResources_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/10/trunk/apca/src/ApplicationResources_fr.properties
+END
+displaytag.properties
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/10/trunk/apca/src/displaytag.properties
+END
+cssHorizontalMenu.vm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/10/trunk/apca/src/cssHorizontalMenu.vm
+END

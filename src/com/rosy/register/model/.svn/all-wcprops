@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model
+END
+CaseReport.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/CaseReport.hbm.xml
+END
+InspectMarket.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/InspectMarket.java
+END
+RegisterApproval.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/RegisterApproval.hbm.xml
+END
+PartyInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/PartyInfo.java
+END
+PartySpokesman.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/PartySpokesman.java
+END
+SceneCheck.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/59/trunk/apca/src/com/rosy/register/model/SceneCheck.hbm.xml
+END
+CaseReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/CaseReport.java
+END
+PartyInfo.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/PartyInfo.hbm.xml
+END
+RegisterApproval.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/RegisterApproval.java
+END
+SceneCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/59/trunk/apca/src/com/rosy/register/model/SceneCheck.java
+END
+PartySpokesman.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/PartySpokesman.hbm.xml
+END
+InspectMarket.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/model/InspectMarket.hbm.xml
+END

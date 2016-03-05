@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup
+END
+transmitReturnReceiptList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/transmitReturnReceiptList.jsp
+END
+checkupProxyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkupProxyList.jsp
+END
+checkupReportForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkupReportForm.jsp
+END
+checkProxyItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkProxyItemList.jsp
+END
+transmitReturnReceiptForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/transmitReturnReceiptForm.jsp
+END
+checkItemList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkItemList.jsp
+END
+checkupProxyForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkupProxyForm.jsp
+END
+checkProxyItemForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkProxyItemForm.jsp
+END
+checkupReportList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkupReportList.jsp
+END
+checkItemForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/59/trunk/apca/WebRoot/WEB-INF/pages/investigate/checkup/checkItemForm.jsp
+END

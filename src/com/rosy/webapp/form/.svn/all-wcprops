@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/form
+END
+ApcaOrganizationForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/webapp/form/ApcaOrganizationForm.java
+END
+RoleForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/form/RoleForm.java
+END
+PendingRequestForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/webapp/form/PendingRequestForm.java
+END
+SysLogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/webapp/form/SysLogForm.java
+END
+AddressForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/form/AddressForm.java
+END
+AttachmentForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/26/trunk/apca/src/com/rosy/webapp/form/AttachmentForm.java
+END
+BaseForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/13/trunk/apca/src/com/rosy/webapp/form/BaseForm.java
+END
+UserForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/webapp/form/UserForm.java
+END
+UploadForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/26/trunk/apca/src/com/rosy/webapp/form/UploadForm.java
+END

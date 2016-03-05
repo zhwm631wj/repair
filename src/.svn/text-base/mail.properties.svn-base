@@ -1,0 +1,9 @@
+# This properties file is used to configure mail settings in 
+# /WEB-INF/applicationContext-service.xml.
+ 
+mail.default.from=AppFuse <zhwm631wj@qq.com>
+mail.debug=false
+mail.transport.protocol=smtp
+mail.host=smtp.qq.com
+mail.username=zhwm631wj
+mail.password=631631wj

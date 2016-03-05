@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service
+END
+CaseReportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/CaseReportManager.java
+END
+PartyInfoManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/PartyInfoManager.java
+END
+PartySpokesmanManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/PartySpokesmanManager.java
+END
+SceneCheckManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/SceneCheckManager.java
+END
+InspectMarketManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/InspectMarketManager.java
+END
+RegisterApprovalManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/register/service/RegisterApprovalManager.java
+END

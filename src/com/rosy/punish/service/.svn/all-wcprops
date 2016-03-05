@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service
+END
+DerateOrPutOffManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/service/DerateOrPutOffManager.java
+END
+CaseInvestEndReportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/CaseInvestEndReportManager.java
+END
+PunishDecisionBookManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/PunishDecisionBookManager.java
+END
+DiscussCaseRecManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/DiscussCaseRecManager.java
+END
+CaseCatalogManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/CaseCatalogManager.java
+END
+AmerceReceiptManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/AmerceReceiptManager.java
+END
+VerifyCheckupManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/VerifyCheckupManager.java
+END
+AffixToPunishManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/AffixToPunishManager.java
+END
+PunishDraftManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/PunishDraftManager.java
+END
+PerformCaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/PerformCaseManager.java
+END
+PunishExamineManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/PunishExamineManager.java
+END
+TransferCaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/service/TransferCaseManager.java
+END
+AdminApprizeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/AdminApprizeManager.java
+END
+HandoverCaseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/punish/service/HandoverCaseManager.java
+END
+HearOfWitnesseManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/38/trunk/apca/src/com/rosy/punish/service/HearOfWitnesseManager.java
+END

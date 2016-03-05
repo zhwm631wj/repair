@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl
+END
+PropertyListManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/PropertyListManagerImpl.java
+END
+CheckupReportManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/CheckupReportManagerImpl.java
+END
+EnrolListManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/EnrolListManagerImpl.java
+END
+CheckProxyItemManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/service/impl/CheckProxyItemManagerImpl.java
+END
+CheckupProxyManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/53/trunk/apca/src/com/rosy/investigate/service/impl/CheckupProxyManagerImpl.java
+END
+ExamProceedingManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/ExamProceedingManagerImpl.java
+END
+TransmitReturnReceiptManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/TransmitReturnReceiptManagerImpl.java
+END
+BusinessLicenseManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/BusinessLicenseManagerImpl.java
+END
+CheckItemManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/CheckItemManagerImpl.java
+END
+ForceWritManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/ForceWritManagerImpl.java
+END
+PropertyKeepListManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/PropertyKeepListManagerImpl.java
+END
+OtherCertManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/OtherCertManagerImpl.java
+END
+ReleaseForceWritManagerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/37/trunk/apca/src/com/rosy/investigate/service/impl/ReleaseForceWritManagerImpl.java
+END

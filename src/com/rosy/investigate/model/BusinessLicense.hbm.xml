@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.rosy.investigate.model.BusinessLicense" table="businesslicense">
+  <id column="ID" name="id" type="java.lang.String">
+   <!-- The generator-class attribute of @hibernate.id is deprecated, use the @hibernate.generator tag -->
+   <generator class="uuid"/>
+  </id>
+  <property column="regCode" generated="never" lazy="false" length="30" name="regCode"/>
+  <property column="regName" generated="never" lazy="false" length="30" name="regName"/>
+  <property column="dealInPerson" generated="never" lazy="false"
+   length="30" name="dealInPerson"/>
+  <property column="buildupWay" generated="never" lazy="false"
+   length="30" name="buildupWay"/>
+  <property column="dealInWhere" generated="never" lazy="false"
+   length="50" name="dealInWhere"/>
+  <property column="dealInMode" generated="never" lazy="false"
+   length="30" name="dealInMode"/>
+  <property column="dealInBound" generated="never" lazy="false"
+   length="200" name="dealInBound"/>
+  <property column="mainDealIn" generated="never" lazy="false"
+   length="200" name="mainDealIn"/>
+  <property column="asideBusiness" generated="never" lazy="false"
+   length="200" name="asideBusiness"/>
+  <property column="issueCertOrg" generated="never" lazy="false"
+   length="50" name="issueCertOrg"/>
+  <property column="validStartDate" generated="never" lazy="false"
+   length="19" name="validStartDate"/>
+  <property column="validEndDate" generated="never" lazy="false"
+   length="19" name="validEndDate"/>
+  <property column="copyDate" generated="never" lazy="false" length="19" name="copyDate"/>
+  <property column="copyWhere" generated="never" lazy="false"
+   length="100" name="copyWhere"/>
+  <property column="witness" generated="never" lazy="false" length="30" name="witness"/>
+  <property column="witnessDate" generated="never" lazy="false"
+   length="19" name="witnessDate"/>
+  <property column="remark" generated="never" lazy="false" length="200" name="remark"/>
+  <property column="rFlag" generated="never" lazy="false" length="1" name="rflag"/>
+  <property column="createDate" generated="never" lazy="false"
+   length="19" name="createDate"/>
+ </class>
+</hibernate-mapping>
